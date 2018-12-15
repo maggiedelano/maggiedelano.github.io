@@ -1,0 +1,58 @@
+{% set description = description|default('Academic website for Dr. Maggie Delano.') -%}
+{% set subtitle = subtitle|default('') -%}
+{% set title = title|default('Maggie Delano' ~ subtitle) -%}
+{% set siteroot = siteroot|default('') -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <title>{{title}}</title>
+    {% endblock %}
+</head>
+
+<body>
+
+    <div class="container">
+
+    {% block navbar %}
+        <ul class="nav nav-tabs">
+        {% for page in pageNames %}
+            {% if page == currentPage %}
+            
+            <li class="active">
+            <a href="#">{{currentPage}}</a>
+            </li>
+
+            {% elif page == "Blog" %}
+
+            <li><a href="{{ pageURLs[loop.index-1] }}" target="_blank">{{page}}</a></li>
+        
+            {% else %}
+            <li><a href="{{ pageURLs[loop.index-1] }}">{{page}}</a></li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+
+    {% endblock %}
+
+    
+        {% block content %}
+
+
+        {% endblock %}
+    </div>
+    <!-- .container -->
+
+    {% block endmatter %}
+
+    {% endblock %}
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

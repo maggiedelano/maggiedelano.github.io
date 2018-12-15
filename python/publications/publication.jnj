@@ -1,0 +1,141 @@
+{% extends "base-template.jnj" %}
+{% set siteroot = siteroot|default("../") -%}
+{% block content %}
+    <h2>{{title}}</h2>
+
+    <div>
+        {% for author in authors %}
+        <span>
+        {% if author.url -%}<a href="{{ author.url }}">{{author.name}}</a>{% else -%}{{author.name}}{% endif -%}<sup><small>{{author.affiliation}}</small></sup></span>
+        {% endfor %}
+    </div>
+
+    <div>
+        {% for affiliation in affiliations %}
+        <span><sup><small>{{loop.index}}</small></sup><span>{{affiliation}}</span></span>
+        {% endfor %}
+    </div>
+
+    <h4>
+        {% if type == 'article' or type == 'inproceedings' -%}In {% endif -%}
+        <em>{{ venue }}</em>{% if year -%}, {{ year }}{% endif%}
+        {% if accolades %}
+        <br /><span>{{accolades}}</span>
+        {% endif %}
+    </h4>
+
+    {% if teaser_image %}
+    <div>
+        <img src="{{teaser_image}}" alt="Teaser" style="max-width: 100%;"/>
+
+        <div>
+            {{caption}}
+        </div>
+    </div>
+    {% endif %}
+
+    <div>
+        <h3>Abstract</h3>
+        <div>
+            <p>
+                {{abstract}}
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <h3>Downloads</h3>
+        <div>
+            <ul>
+                {% if Paper_downloads %}
+                <li>Publication:
+                    <ul>
+                        {% for download in Paper_downloads %}
+                        <li class="{{download.type}}"><a href="{{download.url}}">{{download.text_long}}</a></li>
+                        {% endfor %}
+                        {% for download in Extrapaper_downloads %}
+                        {{download.link}}
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endif %}
+
+                {% if num_slides %}
+                <li>Slides:
+                    <ul>
+                        {% for download in Slide_downloads %}
+                        <li class="{{download.type}}"><a href="{{download.url}}">{{download.text_long}}</a></li>
+                        {% endfor %}
+                        {% for download in Extraslide_downloads %}
+                        {{download.link}}
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endif %}
+
+                {% if num_videos %}
+                <li>Video:
+                    <ul>
+                        {% for download in Video_downloads %}
+                        <li class="{{download.type}}"><a href="{{download.url}}">{{download.text_long}}</a></li>
+                        {% endfor %}
+                        {% for download in Youtube_downloads %}
+                        <li class="{{download.type}}"><a href="{{download.url}}">{{download.text_long}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endif %}
+
+                {% if Data_downloads %}
+                <li>Data:
+                    <ul>
+                        {% for download in Data_downloads %}
+                        <li class="{{download.type}}">{{download.link}}</li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endif %}
+
+                {% if Code_downloads %}
+                <li>Code:
+                    <ul>
+                        {% for download in Code_downloads %}
+                        <li class="{{download.type}}">{{download.link}}</li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+
+    {% if Youtube_downloads %}
+    <div>
+        <h3>Video</h3>
+        <div>
+            <video controls="controls">
+                {% for download in Video_downloads %}
+                <source src="{{download.url}}" type="video/{{ {'mov': 'mp4', 'mp4': 'mp4', 'm4v': 'mp4', 'webm': 'webm'}[download.type] }}" />
+                {% endfor %}
+                <p>Your browser does not support playing this video. Please download the video below.</p>
+            </video>
+        </div>
+    </div>
+    {% endif %}
+
+    <div>
+        <h3>Text Reference</h3>
+        <div>
+            {% for author in authors %}
+            {% if author.url -%}<a href="{{ author.url }}">{{author.name}}</a>{% else -%}{{author.name}}{% endif -%}{% if loop.last -%}.{% else -%}, {% endif -%}
+            {% endfor %}
+            {{ title }}.
+            <em>{{ venue|replace("SIGGRAPH Asia)", "<b>SIGGRAPH Asia</b>)")|replace("SIGGRAPH)", "<b>SIGGRAPH</b>)")}}</em>{% if volume %}, {{ volume }}{% if number %}({{ number }}){% endif %}{% endif %}{% if pages %}:{{ pages }}{% endif %}, {{ month }}{% if year %} {{ year }}{% endif%}.
+        </div>
+    </div>
+
+    <div>
+        <h3 class="panel-title">BibTex Reference</h3>
+        <pre>{{bibcitation}}</pre>
+    </div>
+{% endblock %}

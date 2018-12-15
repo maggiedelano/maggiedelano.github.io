@@ -1,0 +1,35 @@
+{% extends "base-template-mkd.jnj" %}
+{% block title %}Home {% endblock %}
+{% block content %}
+
+<h1 id="publications">Publications</h1>
+
+<p> See my <a href ="cv_mkd.pdf" target="_blank">CV</a> for further information. 
+</p>
+
+<!-- Tab panes -->
+<div class="content">
+    <div id="allPublications">
+    <ul>
+        {% for year in years %}
+
+        
+        
+        
+        {% for paper in year.papers|rejectattr("type", "equalto", "patent") %}
+            <li>
+                <div>
+                    <a href ="{{ paper.quicklinks[0].url }}">{{paper.title}}</a>
+                </div>
+                <div>{% if paper.authors %}{{ paper.authors|join(', ', attribute='name') }}{% endif %}
+                {% if paper.editors %}{{ paper.editors|join(', ', attribute='name') }}, editors{% endif %}.</div>
+                <div><em>{{ paper.venue|replace("SIGGRAPH Asia)", "<b>SIGGRAPH Asia</b>)")|replace("SIGGRAPH)", "<b>SIGGRAPH</b>)")}}</em>{% if paper.volume %}, {{ paper.volume }}{% if paper.number %}({{ paper.number }}){% endif %}{% if paper.pages %}:{{ paper.pages }}{% endif %}{% endif %}, {{ paper.month }}{% if paper.year %} {{ paper.year }}{% endif%}.</div>
+                {% if paper.accolades %}<div>{{ paper.accolades }}</div>{% endif %}
+            </li>
+        {% endfor %}
+        
+        {% endfor %}
+    </ul>
+    </div>
+</div>
+{% endblock %}

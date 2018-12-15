@@ -1,0 +1,30 @@
+{% set description = description|default('Academic website for Dr. Maggie Delano.') -%}
+{% set subtitle = subtitle|default('') -%}
+{% set title = title|default('Maggie Delano' ~ subtitle) -%}
+{% set siteroot = siteroot|default('') -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="utf-8">
+
+    <title>{{title}}</title>
+    {% endblock %}
+</head>
+
+<body>
+
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+    <!-- .container -->
+
+    {#<div id="footer">
+        <p>Copyright &copy; 2015&ndash;{{current_year}} Maggie Delano</p>
+    </div>#}
+
+    {% block endmatter %}
+
+    {% endblock %}
+</body>
+</html>

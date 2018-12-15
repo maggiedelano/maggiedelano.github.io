@@ -1,0 +1,91 @@
+{
+    "bib-file": "publications/publications.bib",
+    "author-database": "author-websites.json",
+    "pub-data-directory": "publications/",
+    "jnj-templates-root": "templates/",
+    "pub-index-template": "publications",
+    "pub-pages-template": "publications/publication",
+    "static-page-templates":
+        [
+            "static-page"
+        ],
+    "static-page-output-root": "../",
+    "pub-index-output-directory": "../",
+    "pub-pages-output-directory": "../publications/",
+    "regular-expressions":
+        {
+            "teaser": "-teaser\\.(jpg|jpeg|png|gif)$",
+            "thumbnail": "-thumb\\.(jpg|jpeg|png|gif)$",
+            "paper": "(|-small|-supplemental|-supplemental-small|-tech|-errata)(|[1-9]|[1][0-9]|20)\\.(pdf)$",
+            "slide": "(-slides|-fast-forward)(|[1-9]|[1][0-9]|20)\\.(pdf|key|pptx|ppt|zip|odp)$",
+            "video": "(|-high|-web|-low|-iphone|-ipad)(|[1-9]|[1][0-9]|20)\\.(mov|mp4|m4v|webm)$"
+        },
+    "paper-suffix-descriptions":
+        {
+            ""                   : {"short": "paper", "long": "Paper"},
+            "-small"             : {"short": "paper (low-quality)", "long": "Paper (low-quality)"},
+            "-supplemental"      : {"short": "supplemental", "long": "Supplemental document"},
+            "-supplemental-small": {"short": "supplemental (low-quality)", "long": "Supplemental document (low-quality)"},
+            "-tech"              : {"short": "tech report", "long": "Tech Report"},
+            "-errata"            : {"short": "errata", "long": "Errata"}
+        },
+    "slide-suffix-descriptions":
+        {
+            "-slides"            : {"short": "slides", "long": "Presentation slides"},
+            "-fast-forward"      : {"short": "ff-slides", "long": "Fast forward slides"}
+        },
+    "video-suffix-descriptions":
+        {
+            ""                   : {"short": "video", "long": "Video (full-quality)"},
+            "-high"              : {"short": "video", "long": "Video (high-quality)"},
+            "-web"               : {"short": "video (web-quality)", "long": "Video (web-quality)"},
+            "-low"               : {"short": "video (low-quality)", "long": "Video (low-quality)"},
+            "-iphone"            : {"short": "video (iphone)", "long": "Video (iPhone)"},
+            "-ipad"              : {"short": "video (ipad)", "long": "Video (iPad)"}
+        },
+    "extension-descriptions":
+        {
+            "pdf" : "PDF",
+        	"key" : "Keynote",
+        	"pptx": "PowerPoint",
+        	"ppt" : "PowerPoint",
+        	"zip" : "PowerPoint package",
+        	"odp" : "OpenOffice",
+            "mp4" : "MP4",
+            "m4v" : "M4V",
+            "mov" : "MOV",
+            "webm": "WEBM"
+        },
+    "author-websites":
+        {
+            "Wojciech Jarosz": "https://www.cs.dartmouth.edu/~wjarosz/",
+            "Gurprit Singh": "http://www.cs.dartmouth.edu/~gsingh/",
+            "Benedikt Bitterli": "http://benedikt-bitterli.me",
+            "Maggie Delano": "http://maggiedelano.com",
+            "Charles Sodini": ""
+        },
+    "pages":
+        {
+            "Home": "index.html",
+            "Projects": "projects.html",
+            "Publications": "publications.html",
+            "Blog": "blog.html",
+            "Contact": "contact.html"
+        },
+    "pageNames":
+        [
+            "Home",
+            "Projects",
+            "Publications",
+            "Blog",
+            "Contact"
+        ],
+    "pageURLs":
+        [
+            "index.html",
+            "projects.html",
+            "publications.html",
+            "https://engineeringinclusively.com",
+            "contact.html"
+        ]
+}
