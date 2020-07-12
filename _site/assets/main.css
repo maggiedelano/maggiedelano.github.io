@@ -148,7 +148,7 @@ table td { border: 1px solid #e8e8e8; }
 
 #all_together { display: flex; flex-direction: row; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 25px; }
 
-#headshot { width: 300px; overflow: scale; }
+#headshot { width: 300px; }
 
 #text { font-size: 15px; margin-right: 75px; }
 

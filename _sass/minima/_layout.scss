@@ -282,21 +282,19 @@
 
 // added
 #all_together{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-bottom: 25px;
-      }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}   
 
-      #headshot {
-        width: 300px;
-        overflow: scale;
-      }
+#headshot {
+  width: 300px;
+}
 
-      #text {
-        @include relative-font-size(0.9375);
-        margin-right: 75px;
-        //border: 10px solid black;
-      }
+#text {
+  @include relative-font-size(0.9375);
+  margin-right: 75px;
+}

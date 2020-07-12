@@ -6,25 +6,23 @@ layout: home
 ---
 
 <html>
-
-<div id="all_together">
-    <div id="headshot">
-        <img src="MKD_headshot.jpg" width="300">
+    <div id="all_together">
+        <div id="headshot">
+            <img src="MKD_headshot.jpg">
+        </div>
+        <div id="text">
+            <h2>Maggie Delano</h2>
+                Assistant Professor <br>
+                Engineering Department <br>
+                Swarthmore College <br>
+                <br>
+                Office: Singer 233 <br>
+                Email: <a href="mailto:mdelano1@swarthmore.edu">mdelano1@swarthmore.edu</a> <br>
+                Phone: 610-328-8295 <br>
+                <br>
+                Fall 2020 Office Hours: TBD
+        </div>
     </div>
-    <div id="text">
-        <h2>Maggie Delano</h2>
-            Assistant Professor <br>
-            Engineering Department <br>
-            Swarthmore College <br>
-            <br>
-            Office: Singer 233 <br>
-            Email: <a href="mailto:mdelano1@swarthmore.edu">mdelano1@swarthmore.edu</a> <br>
-            Phone: 610-328-8295 <br>
-            <br>
-            Fall 2020 Office Hours: TBD
-    </div>
-</div>
-
 </html>
 
 I'm an Assistant Professor of Engineering at [Swarthmore College](https://www.swarthmore.edu/). For my [PhD dissertation](https://dspace.mit.edu/handle/1721.1/115636), I built a [fluid status monitor](http://www.analog.com/en/landing-pages/001/medrc.html) for patients with congestive heart failure with Professor Charlie Sodini. My work was part of the Medical Electronic Device Realization Center ([MEDRC](http://web.mit.edu/medrc/)) at MIT. For my master's [thesis](https://dspace.mit.edu/handle/1721.1/76811), I developed a wearable cardiac monitor that measures single lead electrocardiogram (ECG) and three axis acceleration data for up to one week while the user carries out their daily activities. I have also worked as a Teaching Assistant and Electrical Engineering Instructor for MIT's [Medical Device Design class](http://web.mit.edu/2.75/), where I mentored group projects and designed and supervised an ECG lab.

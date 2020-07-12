@@ -1,4 +1,136 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-11T22:10:46-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Maggie Delano</title><subtitle>Maggie Delano is an Assistant Professor at Swarthmore College working on medical devices for patients with chronic diseases. She's also interested in inclusive engineering design.</subtitle><entry><title type="html">Transitioning to Professor Life</title><link href="http://localhost:4000/2019/01/08/transitioning-to-professor-life.html" rel="alternate" type="text/html" title="Transitioning to Professor Life" /><published>2019-01-08T19:17:49-05:00</published><updated>2019-01-08T19:17:49-05:00</updated><id>http://localhost:4000/2019/01/08/transitioning-to-professor-life</id><content type="html" xml:base="http://localhost:4000/2019/01/08/transitioning-to-professor-life.html">&lt;p&gt;Four and a half years ago I wrote &lt;a href=&quot;https://maggiedelano.tumblr.com/2020/07/11/2014-06-10-doing-whats-important.html&quot;&gt;this post&lt;/a&gt; about my priorities and doing what was important to me at the time as a graduate student in the middle of her PhD. Fast forward to today, and I defended my PhD (over a year ago!) and have started a tenure track assistant professor position at Swarthmore College (hurray!). The last year has been a total whirlwind; I moved in early January 2018, turned in my thesis a few weeks later, and then started teaching about 4 days after that. I’ve been getting used to a new job, a new city, and just closed on a condo in December. It’s like jamming a whole ton of adulting all into one year.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-12T16:52:12-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Maggie Delano</title><subtitle>Maggie Delano is an Assistant Professor at Swarthmore College working on medical devices for patients with chronic diseases. She's also interested in inclusive engineering design.</subtitle><entry><title type="html">Website Revamp!</title><link href="http://localhost:4000/2020/07/12/website-revamp.html" rel="alternate" type="text/html" title="Website Revamp!" /><published>2020-07-12T00:00:00-04:00</published><updated>2020-07-12T00:00:00-04:00</updated><id>http://localhost:4000/2020/07/12/website-revamp</id><content type="html" xml:base="http://localhost:4000/2020/07/12/website-revamp.html">&lt;p&gt;Greetings from my new website! I had a little time this weekend, and to distract myself from the hellhole that is 2020, I decided to port my previous site (which was mostly handwritten in HTML with a header and some organization using &lt;a href=&quot;https://getbootstrap.com/&quot; title=&quot;bootstrap&quot;&gt;bootstrap&lt;/a&gt; and hosted on Swarthmore’s servers) to &lt;a href=&quot;https://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt;, with hosting on &lt;a href=&quot;https://pages.github.com/&quot; title=&quot;GitHub Pages&quot;&gt;GitHub Pages&lt;/a&gt;. I wanted to be able to combine my website and former tumblr blog into one, and Jekyll seemed like an easy way to do that. I considered porting to &lt;a href=&quot;https://www.gatsbyjs.org/&quot; title=&quot;Gatsby&quot;&gt;Gatsby&lt;/a&gt;, but I know nothing about &lt;a href=&quot;https://reactjs.org/&quot; title=&quot;React&quot;&gt;React&lt;/a&gt; or &lt;a href=&quot;https://graphql.org/&quot; title=&quot;GraphQL&quot;&gt;GraphQL&lt;/a&gt; and learning seemed like much more than a weekend project. As it was, I had “fun” trying to figure out how to vertically align my photo and my contact information on the main page, while also being responsive / looking good on both desktop and mobile, so it seems 12 year old software is advanced enough for my limited web programming skills. But hey, I did finally learn the basics of CSS. Here’s a tour of the changes I made.&lt;/p&gt;
+
+&lt;!--* TOC
+//{:toc}--&gt;
+
+&lt;h1 id=&quot;jekyll-and-pages-setup&quot;&gt;Jekyll and Pages Setup&lt;/h1&gt;
+
+&lt;p&gt;I followed the &lt;a href=&quot;https://jekyllrb.com/docs/installation/&quot;&gt;Jekyll Installation Guide&lt;/a&gt; to get started. There were a few minor hiccups getting things to work on macOS; I occasionally had to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt; to execute certain lines of code, which made certain pages unwritable by my user. I fixed this using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chmod -R 775 jekyllSite&lt;/code&gt; (assuming &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyllSite&lt;/code&gt; is the name of the folder with my Jekyll installation in it).&lt;/p&gt;
+
+&lt;p&gt;Once the base Jekyll blog was setup, I moved on to configuration for &lt;a href=&quot;https://pages.github.com/&quot; title=&quot;GitHub pages&quot;&gt;GitHub pages&lt;/a&gt;.  GitHub pages has two different hosting modes: user/organization pages and project pages. They need to be setup slightly differently. To use the user page, I renamed my repo (previously called “website”) to “maggiedelano.github.io”, moved my old website completely out of the repository, and moved my Jekyll install into the root of the repository. GitHub pages then automatically served my Jekyll installation from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; branch. You can check that GitHub pages is serving by checking the repository settings on GitHub (it’s toward the bottom).&lt;/p&gt;
+
+&lt;h1 id=&quot;porting-tumblr-blog&quot;&gt;Porting Tumblr Blog&lt;/h1&gt;
+
+&lt;p&gt;To port my blog, I ran the following line on the command line while in the root Jekyll directory for the new blog:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rubygems&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'require &quot;jekyll-import&quot;;
+    JekyllImport::Importers::Tumblr.run({
+      &quot;url&quot;            =&amp;gt; &quot;https://maggiedelano.tumblr.com&quot;,
+      &quot;format&quot;         =&amp;gt; &quot;md&quot;, # or &quot;md&quot;
+      &quot;grab_images&quot;    =&amp;gt; true,  # whether to download images as well.
+      &quot;add_highlights&quot; =&amp;gt; false,  # whether to wrap code blocks (indented 4 spaces) in a Liquid &quot;highlight&quot; tag
+      &quot;rewrite_urls&quot;   =&amp;gt; true   # whether to write pages that redirect from the old Tumblr paths to the new Jekyll paths
+    })'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;There are many other importers available &lt;a href=&quot;https://import.jekyllrb.com/&quot; title=&quot;Jekyll Importers&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;moving-blog-posts-to-blog&quot;&gt;Moving Blog Posts to blog/&lt;/h1&gt;
+
+&lt;p&gt;The Jekyll default theme is &lt;a href=&quot;https://github.com/jekyll/minima&quot; title=&quot;Minima&quot;&gt;Minima&lt;/a&gt;.&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; This theme displays the blog posts on the home page by default, with the option to add some content at the top before the blog posts begin using the &lt;em&gt;index.md&lt;/em&gt; or &lt;em&gt;index.html&lt;/em&gt; files in the root directory. I decided to change the layout for the home page and instead moved the code that produces the blog posts to its own file called &lt;em&gt;blog.md&lt;/em&gt;. Minima then automatically created a link to the blog in the header.&lt;/p&gt;
+
+&lt;p&gt;To change the layout for the home page, I had to add a new &lt;em&gt;_layouts/home.html&lt;/em&gt; file. I ran &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle info --path minima&lt;/code&gt; to find where Minima’s default files are, and copied &lt;em&gt;home.html&lt;/em&gt; to &lt;em&gt;_layouts/home.html&lt;/em&gt;, removed the content related to blog posts, and saved the file. Any files in the same directory structure as the original Minima gem will automatically override anything inside the Minima gem when serving. (This does mean updating the theme will require more work later). Here’s the new blog page contents:&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+layout: default
+title: Blog
+permalink: /blog/
+---
+ &lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+  {%- if site.posts.size &amp;gt; 0 -%}
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-list-heading&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{{ page.list_title | default: &quot;Posts&quot; }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-list&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      {%- for post in site.posts -%}
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
+        {%- assign date_format = site.minima.date_format | default: &quot;%b %-d, %Y&quot; -%}
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-meta&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{{ post.date | date: date_format }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-link&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ post.url | relative_url }}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            {{ post.title | escape }}
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      {%- endfor -%}
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rss-subscribe&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;subscribe &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ &quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;feed&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;xml&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;relative_url&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;}}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;via RSS&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+  {%- endif -%}
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I used the &lt;em&gt;default&lt;/em&gt; layout instead of &lt;em&gt;page&lt;/em&gt; layout so it doesn’t put the page title at the top. The last thing I did was enable excerpts to show on the blog page, which can be done by adding the line &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;show_excerpts: true&lt;/code&gt; to the &lt;em&gt;_config.yml&lt;/em&gt; page.&lt;/p&gt;
+
+&lt;h1 id=&quot;fun-with-flexbox&quot;&gt;Fun with Flexbox&lt;/h1&gt;
+
+&lt;p&gt;One thing that continues to surprise me about web programming is how much of a pain it is to vertically align things and also be responsive. For example, consider the header on my webpage:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/mkd_header.png&quot; alt=&quot;Header of maggiedelano.com&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I wanted a way to ensure that my face was vertically aligned with the text on the right. A relatively easy way to do this is with a table; unfortunately, when these elements are put into a table and viewed on mobile the image of my face shrinks to be tiny so that the full table can be displayed in the much narrower space. My solution ultimately was to use &lt;a href=&quot;https://css-tricks.com/snippets/css/a-guide-to-flexbox/&quot; title=&quot;flexbox&quot;&gt;flexbox&lt;/a&gt;, and size the header so that it is small enough to display on a phone will a small screen. (I could probably have also experimented with flex items, but this works well enough for now).&lt;/p&gt;
+
+&lt;p&gt;Setting this up required writing some custom HTML and css. Since this is a small website, I hard-coded &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt;s for the whole block (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;all\_together&lt;/code&gt;), and then one each for the headshot and text so that I could write custom CSS for them.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;all_together&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;headshot&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;MKD_headshot.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;300&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Maggie Delano&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+            Assistant Professor &lt;span class=&quot;nt&quot;&gt;&amp;lt;br&amp;gt;&lt;/span&gt;
+            Engineering Department &lt;span class=&quot;nt&quot;&gt;&amp;lt;br&amp;gt;&lt;/span&gt;
+            Swarthmore College &lt;span class=&quot;nt&quot;&gt;&amp;lt;br&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;br&amp;gt;&lt;/span&gt;
+            Office: Singer 233 &lt;span class=&quot;nt&quot;&gt;&amp;lt;br&amp;gt;&lt;/span&gt;
+            Email: &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mailto:mdelano1@swarthmore.edu&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;mdelano1@swarthmore.edu&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;br&amp;gt;&lt;/span&gt;
+            Phone: 610-328-8295 &lt;span class=&quot;nt&quot;&gt;&amp;lt;br&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;br&amp;gt;&lt;/span&gt;
+            Fall 2020 Office Hours: TBD
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Here’s the part I didn’t know how to do when I built my last website: vertical alignment with flexbox!&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;#all_together&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;flex-direction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;row&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;justify-content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;space-between&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;align-items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;flex-wrap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wrap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;margin-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;25px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;   
+
+&lt;span class=&quot;nf&quot;&gt;#headshot&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;300px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nf&quot;&gt;#text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;@include&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;relative-font-size(0.9375);&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;margin-right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;75px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Flexbox has configuration settings for the parent container (in this case &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#all_together&lt;/code&gt;) and also for the individual items. In this case, I only needed to add CSS to the parent container. I chose the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;flex-direction&lt;/code&gt; to be a row and for it to wrap via &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;flex-wrap&lt;/code&gt;; this way my headshot and contact information would show one after the other (headshot first) on a smaller page. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;align-items&lt;/code&gt; aligns everything to the center vertically. Lastly, I added a bottom margin to give things a little breathing room. For &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#headshot&lt;/code&gt;, I just ensured that the width was max 300px, and for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#text&lt;/code&gt;, I used the same font size as the rest of the page and added a right margin to get it to line up the way I wanted in the page.&lt;/p&gt;
+
+&lt;h1 id=&quot;custom-domain&quot;&gt;Custom Domain&lt;/h1&gt;
+
+&lt;h1 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h1&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;The Minima files on GitHub are the latest under development, but by default my Jekyll installation came with an earlier version (2.5.1). I had to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle info --path minima&lt;/code&gt; to find the files actually being used locally by Jekyll. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Fun side note: I had to wrap the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;html&amp;gt;&lt;/code&gt; tags in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{ % raw % } ... { % endraw % }&lt;/code&gt; so that the Jekyll &lt;a href=&quot;https://jekyllrb.com/docs/liquid/&quot; title=&quot;Liquid&quot;&gt;Liquid&lt;/a&gt; parser would output the raw text and not all the blog posts on my site. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="website" /><summary type="html">Greetings from my new website! I had a little time this weekend, and to distract myself from the hellhole that is 2020, I decided to port my previous site (which was mostly handwritten in HTML with a header and some organization using bootstrap and hosted on Swarthmore’s servers) to Jekyll, with hosting on GitHub Pages. I wanted to be able to combine my website and former tumblr blog into one, and Jekyll seemed like an easy way to do that. I considered porting to Gatsby, but I know nothing about React or GraphQL and learning seemed like much more than a weekend project. As it was, I had “fun” trying to figure out how to vertically align my photo and my contact information on the main page, while also being responsive / looking good on both desktop and mobile, so it seems 12 year old software is advanced enough for my limited web programming skills. But hey, I did finally learn the basics of CSS. Here’s a tour of the changes I made.</summary></entry><entry><title type="html">Transitioning to Professor Life</title><link href="http://localhost:4000/2019/01/08/transitioning-to-professor-life.html" rel="alternate" type="text/html" title="Transitioning to Professor Life" /><published>2019-01-08T19:17:49-05:00</published><updated>2019-01-08T19:17:49-05:00</updated><id>http://localhost:4000/2019/01/08/transitioning-to-professor-life</id><content type="html" xml:base="http://localhost:4000/2019/01/08/transitioning-to-professor-life.html">&lt;p&gt;Four and a half years ago I wrote &lt;a href=&quot;https://maggiedelano.tumblr.com/2020/07/11/2014-06-10-doing-whats-important.html&quot;&gt;this post&lt;/a&gt; about my priorities and doing what was important to me at the time as a graduate student in the middle of her PhD. Fast forward to today, and I defended my PhD (over a year ago!) and have started a tenure track assistant professor position at Swarthmore College (hurray!). The last year has been a total whirlwind; I moved in early January 2018, turned in my thesis a few weeks later, and then started teaching about 4 days after that. I’ve been getting used to a new job, a new city, and just closed on a condo in December. It’s like jamming a whole ton of adulting all into one year.&lt;/p&gt;
 
 &lt;p&gt;Now that the dust is starting to settle a bit, I’m realizing that I don’t entirely know what I actually want to prioritize for the coming years (especially outside of work). All my energy had been focused on getting &lt;em&gt;to&lt;/em&gt; &lt;strong&gt; &lt;/strong&gt; the faculty position, and the last year I’ve been adjusting, but now I’m here and need to decide what I want the next stage of my life to look like holistically. On the one hand, I feel like I have so many options and possibilities; on the other, I feel like need to stay focused for the long haul to make a dent in the meaningful ways I aspire to. All the things that were on my “someday after grad school” list are now begging for attention and it’s overwhelming.&lt;/p&gt;
 
@@ -122,12 +254,4 @@
 
 &lt;p&gt;Despite all this effort, I’ve still checked my email at least three times while writing this post. I think this will be a real challenge, but I’m interested to see where it goes. I’ll report back when I get home.&lt;/p&gt;</content><author><name></name></author><category term="email" /><category term="vacation" /><category term="emailvacation" /><category term="habits" /><summary type="html">Grad school has been particularly stressful and hectic the past few months, so I’m super excited to be taking a 10 day vacation starting tomorrow. I’ll be flying to Portland, then to SF, then to Las Vegas, and then back home to Boston!</summary></entry><entry><title type="html">A Code of Conduct</title><link href="http://localhost:4000/2014/07/06/a-code-of-conduct.html" rel="alternate" type="text/html" title="A Code of Conduct" /><published>2014-07-06T16:14:53-04:00</published><updated>2014-07-06T16:14:53-04:00</updated><id>http://localhost:4000/2014/07/06/a-code-of-conduct</id><content type="html" xml:base="http://localhost:4000/2014/07/06/a-code-of-conduct.html">&lt;p&gt;&lt;a href=&quot;http://quantifiedself.com/2014/06/code-conduct/&quot;&gt;A Code of Conduct&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;I wrote this blog post for the Quantified Self blog. I’m excited to see where these improvements take us as a community.&lt;/p&gt;</content><author><name></name></author><category term="quantified self" /><category term="code of conduct" /><summary type="html">A Code of Conduct</summary></entry><entry><title type="html">Vegan Eats</title><link href="http://localhost:4000/2014/06/22/vegan-eats.html" rel="alternate" type="text/html" title="Vegan Eats" /><published>2014-06-22T20:42:35-04:00</published><updated>2014-06-22T20:42:35-04:00</updated><id>http://localhost:4000/2014/06/22/vegan-eats</id><content type="html" xml:base="http://localhost:4000/2014/06/22/vegan-eats.html">&lt;p&gt;I’ve been eating &lt;a href=&quot;http://maggiedelano.tumblr.com/2020/07/11/2014-05-05-reflections-after-a-month-of-veganism-during-the.html-week&quot;&gt;vegan during the week&lt;/a&gt; for almost three months now. I thought it would be pretty challenging to eat vegan and also purchase most of my meals (I’ve been busy, and haven’t had much time for cooking). Fortunately, though, I’ve found a few different vegan options at restaurants in Cambridge and Somerville that I really like. Here are some of my current favorites:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://bloc11.com/menu/sandwiches/&quot;&gt;The Atticus&lt;/a&gt; at Bloc 11 Cafe&lt;/strong&gt;  &lt;strong&gt;- &lt;/strong&gt; buffalo tempeh with avocado spread, tomato, red onion, and greens on rye. I tried this for the first time two weeks ago, and love it. Ask for it toasted.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.cloverfoodlab.com/food/&quot;&gt;Chickpea Fritter&lt;/a&gt; at Clover&lt;/strong&gt; - hummus, israeli salad, pickles, falafel, pickled vegetables and tahini. Crunchy and amazing. &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Chana Masala and Toor Dal at &lt;a href=&quot;http://dining.mit.edu/venues-menus/cafespice&quot;&gt;Cafe Spice&lt;/a&gt;&lt;/strong&gt; - chickpeas, yellow lentils, and rice. Simple but probably one of my favorite lunch time options.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Most chain restaurants also have a vegan option, or you can order a vegetarian option without cheese. The sofritas from Chipotle is delicious, as is the hummus and veggie sandwich from Cosi.&lt;/p&gt;</content><author><name></name></author><category term="vegan" /><category term="veganism" /><summary type="html">I’ve been eating vegan during the week for almost three months now. I thought it would be pretty challenging to eat vegan and also purchase most of my meals (I’ve been busy, and haven’t had much time for cooking). Fortunately, though, I’ve found a few different vegan options at restaurants in Cambridge and Somerville that I really like. Here are some of my current favorites:</summary></entry></feed>
+&lt;p&gt;I wrote this blog post for the Quantified Self blog. I’m excited to see where these improvements take us as a community.&lt;/p&gt;</content><author><name></name></author><category term="quantified self" /><category term="code of conduct" /><summary type="html">A Code of Conduct</summary></entry></feed>
