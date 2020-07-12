@@ -84,7 +84,11 @@ One thing that continues to surprise me about web programming is how much of a p
 
 I wanted a way to ensure that my face was vertically aligned with the text on the right. A relatively easy way to do this is with a table; unfortunately, when these elements are put into a table and viewed on mobile the image of my face shrinks to be tiny so that the full table can be displayed in the much narrower space. My solution ultimately was to use [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/ "flexbox"), and size the header so that it is small enough to display on a phone will a small screen. (I could probably have also experimented with flex items, but this works well enough for now).
 
-Setting this up required writing some custom HTML and css. Since this is a small website, I hard-coded `<div>`s for the whole block (`all\_together`), and then one each for the headshot and text so that I could write custom CSS for them. 
+Setting this up required writing some custom HTML and css.[^3] Since this is a small website, I hard-coded `<div>`s for the whole block (`all\_together`), and then one each for the headshot and text so that I could write custom CSS for them.[^4] 
+
+[^3]: I finally learned how CSS actually works by completing the CSS chapters of the Khan Academy [Intro to HTML/CSS: Making Webpages](https://www.khanacademy.org/computing/computer-programming/html-css "Intro to HTML/CSS: Making Webpages") course.
+
+[^4]: Writing custom CSS for the Minima version I am using requires copying _\_sass/minima.scss_ and then the contents of the _\_sass/minima/_ folder and then adding or editing accordingly.
 
 ``` html
 <html>
@@ -108,7 +112,7 @@ Setting this up required writing some custom HTML and css. Since this is a small
 </html>
 ```
 
-Here's the part I didn't know how to do when I built my last website: vertical alignment with flexbox! 
+Here's the part I didn't know how to do when I built my last website: vertical alignment with flexbox! This code was added to _\_sass/minima/\_layout.scss_.
 
 ``` css
 #all_together{
@@ -132,8 +136,15 @@ Here's the part I didn't know how to do when I built my last website: vertical a
 
 Flexbox has configuration settings for the parent container (in this case `#all_together`) and also for the individual items. In this case, I only needed to add CSS to the parent container. I chose the `flex-direction` to be a row and for it to wrap via `flex-wrap`; this way my headshot and contact information would show one after the other (headshot first) on a smaller page. `align-items` aligns everything to the center vertically. Lastly, I added a bottom margin to give things a little breathing room. For `#headshot`, I just ensured that the width was max 300px, and for `#text`, I used the same font size as the rest of the page and added a right margin to get it to line up the way I wanted in the page.
 
+# Adding a Publications Page
+
+Once everything else was set up, adding a publications page was easy: I just wrote the whole thing in markdown and linked to my CV. Hurray!
 
 # Custom Domain
+
+My last step was to set up GitHub pages to use a custom domain (www.maggiedelano.com). Fortunately following the [instructions](https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site "GitHub custom domain instructions") went smoothly, though I also added a [301 redirect](https://support.google.com/webmasters/answer/93633?hl=en) from maggiedelano.com to www.maggiedelano.com on my host provider ([Namecheap](https://www.namecheap.com/ "Namecheap")) because just typing maggiedelano.com in the browser without it wasn't working anymore.
+
+And then I was done (zzz).
 
 # Footnotes
 
