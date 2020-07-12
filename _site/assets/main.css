@@ -146,11 +146,11 @@ table td { border: 1px solid #e8e8e8; }
 .post-content h4 { font-size: 20px; }
 @media screen and (max-width: 800px) { .post-content h4 { font-size: 18px; } }
 
-#all_together { display: flex; flex-direction: row; justify-content: space-between; align-items: center; flex-wrap: wrap; width: 800px; margin-bottom: 25px; }
+#all_together { display: flex; flex-direction: row; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 25px; }
 
-#headshot { width: 350px; overflow: scale; }
+#headshot { width: 300px; overflow: scale; }
 
-#text { font-size: 15px; width: 30%; margin-right: 125px; }
+#text { font-size: 15px; margin-right: 75px; }
 
 /** Syntax highlighting styles */
 .highlight { background: #fff; }

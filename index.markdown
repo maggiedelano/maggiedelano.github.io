@@ -9,7 +9,7 @@ layout: home
 
 <div id="all_together">
     <div id="headshot">
-        <img src="MKD_headshot.jpg" width="350">
+        <img src="MKD_headshot.jpg" width="300">
     </div>
     <div id="text">
         <h2>Maggie Delano</h2>

@@ -287,19 +287,16 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        width: 800px;
         margin-bottom: 25px;
       }
 
       #headshot {
-        width: 350px;
+        width: 300px;
         overflow: scale;
-        //margin-left: 50px;
-
       }
 
       #text {
         @include relative-font-size(0.9375);
-        width:30%;
-        margin-right: 125px;
+        margin-right: 75px;
+        //border: 10px solid black;
       }
