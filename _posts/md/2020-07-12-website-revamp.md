@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Website Revamp!
+image: /images/mkd_header.png
 tags:
 - website
 ---

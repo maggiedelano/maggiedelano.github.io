@@ -1,0 +1,18 @@
+{
+    "folders":
+    [
+        {
+            "follow_symlinks": true,
+            "path": "/Users/maggied/website/"
+        }
+    ],
+
+    "settings":
+    {
+        "Jekyll":
+        {
+            "jekyll_posts_path": "/Users/maggied/website/_posts",
+            "jekyll_drafts_path": "/Users/maggied/website/_drafts",
+        }
+    }
+}
