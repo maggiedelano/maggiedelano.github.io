@@ -26,7 +26,7 @@ layout: home
 </html>
 
 <style type="text/css">.info{background-color:rgba(68,138,255,.15);padding:10px;font-style:italic}</style>
-<p class="info">Are you a student or otherwise interested in my teaching and resources? If so, check out the [resources page](/resources).</p>
+<p class="info">Are you a student or otherwise interested in my teaching and resources? If so, check out the [resources page](/Resources).</p>
 
 I'm an Assistant Professor of Engineering at [Swarthmore College](https://www.swarthmore.edu/){:target="_blank"}. For my [PhD dissertation](https://dspace.mit.edu/handle/1721.1/115636){:target="_blank"}, I built a [fluid status monitor](http://www.analog.com/en/landing-pages/001/medrc.html){:target="_blank"} for patients with congestive heart failure with Professor Charlie Sodini. My work was part of the Medical Electronic Device Realization Center ([MEDRC](http://web.mit.edu/medrc/){:target="_blank"}) at MIT. For my master's [thesis](https://dspace.mit.edu/handle/1721.1/76811){:target="_blank"}, I developed a wearable cardiac monitor that measures single lead electrocardiogram (ECG) and three axis acceleration data for up to one week while the user carries out their daily activities. I also worked as a Teaching Assistant and Electrical Engineering Instructor for MIT's [Medical Device Design class](http://web.mit.edu/2.75/){:target="_blank"}, where I mentored group projects and designed and supervised an ECG lab.
 
