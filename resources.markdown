@@ -4,7 +4,7 @@
 
 layout: page
 title: Resources
-permalink: /Resources/
+permalink: /resources/
 ---
 
 <!--Requesting a recommendation? Read these instructions and fill out the associated form.-->
