@@ -14,13 +14,15 @@ permalink: /resources/
 
 Both of my courses will be offered remotely this semester:  
 
-- **[ENGR 015](https://catalog.swarthmore.edu/preview_course.php?catoid=7&coid=71950 "ENGR 015"){:target="_blank"}: Fundamentals of Digital and Embedded Systems** (co-taught with [Erik Cheever](http://www.swarthmore.edu/NatSci/echeeve1/ "Erik Cheever's Website"){:target="_blank"})
-	- Scheduled lecture time: Tuesday/Thursday 11:45am--1pm. 
-	- Conferencing and other details to come.
+- **[ENGR 015](https://www.notion.so/ENGR-015-FA20-a392ebe3632e4205898bb0eac788629e "ENGR 015"){:target="_blank"}: Fundamentals of Digital and Embedded Systems** (co-taught with [Erik Cheever](http://www.swarthmore.edu/NatSci/echeeve1/ "Erik Cheever's Website"){:target="_blank"})
+	- Scheduled lecture time: Tuesday/Thursday 11:45am--1pm EDT. 
+	- Office hours: Mondays 3pm-5pm EDT, or [by appointment](https://calendly.com/maggiedelano/meet "Calendly"){:target="_blank"}.
+	- Conferencing and other details are available on the course Moodle page.
 
-- **[ENGR 053](https://catalog.swarthmore.edu/preview_course.php?catoid=7&coid=71906 "ENGR 053"){:target="_blank"}: Inclusive Engineering Design**
-	- Scheduled lecture time: Tuesday/Thursday 3:45pm--5pm. 
-	- Conferencing and other details to come.
+- **[ENGR 053](https://www.notion.so/ENGR-053-FA20-aab6498961fe4d3d85c9d9f31e0cdbef "ENGR 053"){:target="_blank"}: Inclusive Engineering Design**
+	- Scheduled lecture time: Tuesday/Thursday 3:45pm--5pm EDT. 
+	- Office hours: [by appointment](https://calendly.com/maggiedelano/meet "Calendly"){:target="_blank"}.
+	- Conferencing and other details are available on the course Moodle page.
 	- Learn more about the motivation for this course on the [Engineering Inclusively Blog](https://engineeringinclusively.com/ "Engineering Inclusively Blog"){:target="_blank"}.
 
 # Courses Taught
