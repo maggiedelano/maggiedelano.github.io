@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Make Your Roam Theme Your Own With These CSS Snippets | Maggie Delano</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Make Your Roam Theme Your Own With These CSS Snippets" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="There are a lot of amazing themes for Roam Research, many of which come with custom CSS enhancements in addition to changing the default colors. But to fully customize your experience you sometimes want to add custom CSS to an existing theme (or your own theme). Here’s a collection of CSS snippets that can help make your Roam CSS theme really feel like your own." />
+<meta property="og:description" content="There are a lot of amazing themes for Roam Research, many of which come with custom CSS enhancements in addition to changing the default colors. But to fully customize your experience you sometimes want to add custom CSS to an existing theme (or your own theme). Here’s a collection of CSS snippets that can help make your Roam CSS theme really feel like your own." />
+<link rel="canonical" href="http://localhost:4000/2020/09/05/roamcsssnippets.html" />
+<meta property="og:url" content="http://localhost:4000/2020/09/05/roamcsssnippets.html" />
+<meta property="og:site_name" content="Maggie Delano" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-09-05T00:00:00-04:00" />
+<script type="application/ld+json">
+{"description":"There are a lot of amazing themes for Roam Research, many of which come with custom CSS enhancements in addition to changing the default colors. But to fully customize your experience you sometimes want to add custom CSS to an existing theme (or your own theme). Here’s a collection of CSS snippets that can help make your Roam CSS theme really feel like your own.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/09/05/roamcsssnippets.html"},"url":"http://localhost:4000/2020/09/05/roamcsssnippets.html","headline":"Make Your Roam Theme Your Own With These CSS Snippets","dateModified":"2020-09-05T00:00:00-04:00","datePublished":"2020-09-05T00:00:00-04:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Maggie Delano" /><!-- Twitter cards -->
+<meta name="twitter:site"    content="@maggied">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title"   content="Make Your Roam Theme Your Own With These CSS Snippets">
+
+
+<meta name="twitter:description" content="Maggie Delano is an Assistant Professor at Swarthmore College working on medical devices for patients with chronic diseases. She's also interested in inclusive engineering design.">
+
+
+
+<meta name="twitter:card"  content="summary">
+<meta name="twitter:image" content="">
+
+<!-- end of Twitter cards --></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Maggie Delano</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/publications/">Publications</a><a class="page-link" href="/resources/">Resources</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Make Your Roam Theme Your Own With These CSS Snippets</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-09-05T00:00:00-04:00" itemprop="datePublished">Sep 5, 2020
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>There are a lot of amazing themes for <a href="https://roamresearch.com/">Roam Research</a>, many of which come with custom CSS enhancements in addition to changing the default colors. But to fully customize your experience you sometimes want to add custom CSS to an existing theme (or your own theme). Here’s a collection of CSS snippets that can help make your Roam CSS theme really feel like your own.</p>
+
+<ul id="markdown-toc">
+  <li><a href="#setup" id="markdown-toc-setup">Setup</a></li>
+  <li><a href="#custom-tags" id="markdown-toc-custom-tags">Custom Tags</a></li>
+  <li><a href="#custom-pages" id="markdown-toc-custom-pages">Custom Pages</a></li>
+  <li><a href="#turn-page-brackets-off" id="markdown-toc-turn-page-brackets-off">Turn page brackets off</a></li>
+  <li><a href="#pretty-block-references" id="markdown-toc-pretty-block-references">Pretty Block References</a></li>
+  <li><a href="#round-checkbox" id="markdown-toc-round-checkbox">Round checkbox</a></li>
+  <li><a href="#styling-aliases-and-links" id="markdown-toc-styling-aliases-and-links">Styling aliases and links</a></li>
+  <li><a href="#customize-queries" id="markdown-toc-customize-queries">Customize Queries</a></li>
+  <li><a href="#writing-your-own-snippets" id="markdown-toc-writing-your-own-snippets">Writing Your Own Snippets</a></li>
+  <li><a href="#resources" id="markdown-toc-resources">Resources</a></li>
+</ul>
+
+<h1 id="setup">Setup</h1>
+
+<p>To use the snippets, you’ll need to set up <a href="https://forum.roamresearch.com/t/awesome-css-for-beginners-and-intermediates/593/7">custom CSS</a> for your database if you haven’t already. I recommend using the <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en">Stylus Chrome Extension</a>, but you can also use the native [[roam/css]] page. Using a fully fledged theme in addition to these snippets is optional.</p>
+
+<h1 id="custom-tags">Custom Tags</h1>
+
+<p>One of the best ways to customize your Roam CSS is custom tags. You can use the custom tags to indicate a type of note, to help visually organize your daily notes, etc. For example, I use custom tags as part of my daily notes template:</p>
+
+<p><img src="/images/rmdaily.png" width="60%" /></p>
+
+<p>This styling includes emoji that are placed before the tag (using the <code class="language-plaintext highlighter-rouge">::before</code> pseudo class), and then additional styling for the text itself. You can also style tags based on phrases that they start with, end with, or contain. This tag style was created and popularized by <a href="https://maggieappleton.com/paintingroam">Maggie Appleton</a>. Here’s the relevant CSS snippet (<a href="https://github.com/theianjones/roam-research-themes/blob/master/mappletons.css">source</a> for first two selectors):</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* add content before a tag (change yourTagHere to the tag)
+   you can also add content ::after */</span>
+<span class="nt">span</span><span class="nc">.rm-page-ref</span><span class="o">[</span><span class="nt">data-tag</span><span class="o">=</span><span class="s1">"yourTagHere"</span><span class="o">]</span><span class="nd">::before</span>  <span class="p">{</span>
+    <span class="nl">content</span><span class="p">:</span> <span class="s1">"💭 "</span>
+<span class="p">}</span>
+
+<span class="c">/* style tag text */</span>
+<span class="nt">span</span><span class="nc">.rm-page-ref</span><span class="o">[</span><span class="nt">data-tag</span><span class="o">=</span><span class="s1">"yourTagHere"</span><span class="o">]</span><span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="m">#31b350</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">3px</span> <span class="m">7px</span><span class="p">;</span>
+    <span class="nl">line-height</span><span class="p">:</span> <span class="m">2em</span><span class="p">;</span>
+    <span class="nl">font-weight</span><span class="p">:</span> <span class="m">600</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* style tag starting with text 
+   you can substitute $= for "ends with" and *= for "includes" */</span>
+<span class="nt">span</span><span class="nc">.rm-page-ref</span><span class="o">[</span><span class="nt">data-tag</span><span class="o">^=</span><span class="s1">"Evergreen"</span><span class="o">]</span><span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="m">#25883d</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">font-weight</span><span class="p">:</span> <span class="m">600</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<h1 id="custom-pages">Custom Pages</h1>
+
+<p>Pages and tags in Roam are functionally equivalent, but are styled differently. I style pages for specific namespaces using <code class="language-plaintext highlighter-rouge">data-link-title^=</code>, and dates using <code class="language-plaintext highlighter-rouge">data-link-title$="2020"</code>. As with tags, you can add content before and after each page. Here are some examples:</p>
+
+<p><img src="/images/rmpages.png" width="60%" /></p>
+
+<p>And here’s the css (<a href="https://github.com/jmharris903/Railscast-for-Roam-Research-Theme">source</a> for first two selectors):</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* add content before a page (change yourTagHere to the tag)
+   you can also add content ::after */</span>
+<span class="nt">span</span><span class="o">[</span><span class="nt">data-link-title</span><span class="o">=</span><span class="s1">"yourTagHere"</span><span class="o">]</span><span class="nd">::before</span>  <span class="p">{</span>
+    <span class="nl">content</span><span class="p">:</span> <span class="s1">"💭 "</span>
+<span class="p">}</span>
+
+<span class="c">/* style tag text */</span>
+<span class="nt">span</span><span class="o">[</span><span class="nt">data-link-title</span><span class="o">=</span><span class="s1">"yourTagHere"</span><span class="o">]</span><span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="m">#31b350</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">3px</span> <span class="m">7px</span><span class="p">;</span>
+    <span class="nl">line-height</span><span class="p">:</span> <span class="m">2em</span><span class="p">;</span>
+    <span class="nl">font-weight</span><span class="p">:</span> <span class="m">600</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* add a calendar to all dates (pages that end w/ 2020...)
+   you can substitute $= for "ends with" and *= for "includes" */</span>
+<span class="nt">span</span><span class="o">[</span><span class="nt">data-link-title</span><span class="err">$</span><span class="o">=</span><span class="s1">"2020"</span><span class="o">]</span> <span class="nc">.rm-page-ref-link-color</span><span class="nd">::before</span><span class="p">{</span>
+    <span class="nl">content</span><span class="p">:</span> <span class="s1">"🗓 "</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h1 id="turn-page-brackets-off">Turn page brackets off</h1>
+
+<p>While you can toggle brackets in Roam on and off using Ctrl-c then Ctrl-b, you can also disable them in CSS (<a href="https://github.com/theianjones/roam-research-themes/blob/master/mappletons.css">source</a>):</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.rm-page-ref-brackets</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span> <span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h1 id="pretty-block-references">Pretty Block References</h1>
+
+<p>While the default block reference styling is very clear, Maggie Appleton created a prettier version of block references (<a href="https://github.com/theianjones/roam-research-themes/blob/master/mappletons.css">source</a>):</p>
+
+<p><img src="/images/rmref.png" width="60%" /></p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* add vertical line before block reference*/</span>
+<span class="nc">.rm-block-ref</span><span class="nd">::before</span> <span class="p">{</span>
+    <span class="nl">content</span><span class="p">:</span> <span class="s2">''</span><span class="p">;</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">2px</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">40px</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">12px</span><span class="p">;</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="m">#ff913c</span><span class="p">;</span>
+    <span class="nl">margin-right</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* turn off underlining */</span> 
+<span class="nc">.rm-block-ref</span><span class="p">{</span>
+    <span class="nl">border-bottom</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<h1 id="round-checkbox">Round checkbox</h1>
+
+<p>Some people like round checkboxes for their to dos in Roam; now you can have that with this short snippet! (thanks to David on <a href="https://roamresearch.slack.com/join/shared_invite/zt-ft43m4mo-DDXHHaguKCIEgU09P1ittA#/">Roam Slack</a>)</p>
+
+<p><img src="/images/rmcheckbox.png" width="40%" /></p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.checkmark</span> <span class="p">{</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50%</span> <span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h1 id="styling-aliases-and-links">Styling aliases and links</h1>
+
+<p>In addition to page refs with brackets <code class="language-plaintext highlighter-rouge">[[]]</code>, you can use aliases for external links, links to blocks, and links to pages (<code class="language-plaintext highlighter-rouge">[]()</code>). This CSS snippet allows you to style each of these different types of links, including links for specific Roam databases (thanks to Steven Salka on <a href="https://roamresearch.slack.com/join/shared_invite/zt-ft43m4mo-DDXHHaguKCIEgU09P1ittA#/">Roam Slack</a>):</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* style external, block, and page aliases 
+   move to their own block to alter individually */</span>
+<span class="nt">a</span><span class="nc">.rm-alias-external</span><span class="o">,</span> <span class="nt">a</span><span class="nc">.rm-alias-block</span><span class="o">,</span> <span class="nt">a</span><span class="nc">.rm-alias-page</span> <span class="p">{</span>
+  
+<span class="p">}</span>
+
+<span class="c">/* style links to specific Roam DB (change db_name) */</span>
+<span class="nt">a</span><span class="o">[</span><span class="nt">title</span><span class="o">^=</span><span class="s1">"url: https://roamresearch.com/#/app/db_name/"</span><span class="o">]</span><span class="p">{</span>
+  
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h1 id="customize-queries">Customize Queries</h1>
+
+<p>Queries are a powerful component of Roam, but they have a lot of extra context that is not always necessary (for example, when using queries for to do lists or project management). <a href="https://github.com/jmharris903/Railscast-for-Roam-Research-Theme">Jeff Harris</a> and <a href="http://mattgoldenberg.net/2020/05/18/todoist-to-roam-research-advanced-task-management-in-roam/">Matt Goldenberg</a> have developed custom CSS to hide different parts of the query, including the title, breadcrumbs, and query string:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c">/* RR change: MINIMIZE QUERIES: add any one of the following tags before the beginning of your query (in the same block):
+
+    #min-title = hides the page reference link / page title
+    #min-con = hides the contextual reference information (breadcrumbs)
+    #minimal = hides both the title and the context
+    #min-q = hides the query string, similar to legacy behavior
+    #min-all = hides everything — title, context, and query string
+
+inspired by Matt Goldenberg */</span>
+
+<span class="o">[</span><span class="nt">data-tag</span><span class="o">=</span><span class="s1">"minimal"</span><span class="o">],</span> 
+<span class="o">[</span><span class="nt">data-tag</span><span class="o">=</span><span class="s1">"minimal"</span><span class="o">]</span> <span class="o">+</span> <span class="nc">.rm-query</span> <span class="nc">.rm-title-arrow-wrapper</span><span class="o">,</span>
+<span class="o">[</span><span class="nt">data-tag</span><span class="o">=</span><span class="s1">"minimal"</span><span class="o">]</span> <span class="o">+</span> <span class="nc">.rm-query</span> <span class="nc">.zoom-mentions-view</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span><span class="nb">none</span><span class="cp">!important</span><span class="p">;</span> <span class="c">/* hide page reference (title) and mention context (breadcrumbs) */</span>
+<span class="p">}</span>
+<span class="o">[</span><span class="nt">data-tag</span><span class="o">=</span><span class="s1">"min-title"</span><span class="o">],</span> <span class="o">[</span><span class="nt">data-tag</span><span class="o">=</span><span class="s1">"min-title"</span><span class="o">]</span> <span class="o">+</span> <span class="nc">.rm-query</span> <span class="nc">.rm-title-arrow-wrapper</span> <span class="p">{</span>
+<span class="nl">display</span><span class="p">:</span><span class="nb">none</span><span class="cp">!important</span><span class="p">;</span> <span class="c">/* hide page reference (title) */</span>
+<span class="p">}</span>
+<span class="o">[</span><span class="nt">data-tag</span><span class="o">=</span><span class="s1">"min-con"</span><span class="o">],</span> <span class="o">[</span><span class="nt">data-tag</span><span class="o">=</span><span class="s1">"min-con"</span><span class="o">]</span> <span class="o">+</span> <span class="nc">.rm-query</span> <span class="nc">.zoom-mentions-view</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span><span class="nb">none</span> <span class="cp">!important</span><span class="p">;</span>  <span class="c">/* hide mention context (breadcrumbs) */</span>
+<span class="p">}</span>
+<span class="o">[</span><span class="nt">data-tag</span><span class="o">=</span><span class="s1">"min-q"</span><span class="o">],</span> 
+<span class="o">[</span><span class="nt">data-tag</span><span class="o">=</span><span class="s1">"min-q"</span><span class="o">]</span> <span class="o">+</span> <span class="nc">.rm-query</span> <span class="nc">.rm-query-title</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span><span class="nb">none</span> <span class="cp">!important</span><span class="p">;</span>  <span class="c">/* hide the query string */</span>
+<span class="p">}</span>
+<span class="o">[</span><span class="nt">data-tag</span><span class="o">=</span><span class="s1">"min-all"</span><span class="o">],</span> 
+<span class="o">[</span><span class="nt">data-tag</span><span class="o">=</span><span class="s1">"min-all"</span><span class="o">]</span> <span class="o">+</span> <span class="nc">.rm-query</span> <span class="nc">.zoom-mentions-view</span><span class="o">,</span>
+<span class="o">[</span><span class="nt">data-tag</span><span class="o">=</span><span class="s1">"min-all"</span><span class="o">]</span> <span class="o">+</span> <span class="nc">.rm-query</span> <span class="nc">.rm-title-arrow-wrapper</span><span class="o">,</span>
+<span class="o">[</span><span class="nt">data-tag</span><span class="o">=</span><span class="s1">"min-all"</span><span class="o">]</span> <span class="o">+</span> <span class="nc">.rm-query</span> <span class="nc">.rm-query-title</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span><span class="nb">none</span> <span class="cp">!important</span><span class="p">;</span>  <span class="c">/* hide everything */</span>
+<span class="p">}</span>
+<span class="o">[</span><span class="nt">data-tag</span><span class="o">=</span><span class="s1">"minimal"</span><span class="o">]</span> <span class="o">+</span> <span class="nc">.rm-query</span> <span class="nc">.rm-query-title</span><span class="nd">::after</span><span class="o">,</span>
+<span class="o">[</span><span class="nt">data-tag</span><span class="o">=</span><span class="s1">"min-title"</span><span class="o">]</span> <span class="o">+</span> <span class="nc">.rm-query</span> <span class="nc">.rm-query-title</span><span class="nd">::after</span><span class="o">,</span>
+<span class="o">[</span><span class="nt">data-tag</span><span class="o">=</span><span class="s1">"min-con"</span><span class="o">]</span> <span class="o">+</span> <span class="nc">.rm-query</span> <span class="nc">.rm-query-title</span><span class="nd">::after</span><span class="p">{</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="s1">" #minimal"</span> <span class="c">/* add a tag to the query string to indicate this query has been minimized */</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h1 id="writing-your-own-snippets">Writing Your Own Snippets</h1>
+
+<p>My advice for writing your own CSS snippets is to take a little time to complete this <a href="https://www.khanacademy.org/computing/computer-programming/html-css/intro-to-css/pt/css-selecting-by-class">Basic CSS Tutorial</a>, and then start poking around in Roam using the <a href="https://developers.google.com/web/tools/chrome-devtools/css">inspector</a>. The tutorial is helpful because once you identify the class you’d like to modify you may still need help figuring out how to write the appropriate selector. You can also browse around in existing Roam themes and mix and match what works for you.</p>
+
+<h1 id="resources">Resources</h1>
+
+<p>Here’s a more complete set of references I’ve found helpful:</p>
+
+<ul>
+  <li>Learning CSS:
+    <ul>
+      <li><a href="https://www.khanacademy.org/computing/computer-programming/html-css/intro-to-css/pt/css-selecting-by-class">Basic CSS Tutorial</a> (Khan Academy)</li>
+      <li><a href="https://developers.google.com/web/tools/chrome-devtools/css">Get Started With Viewing And Changing CSS</a> (for Chrome, similar in other browsers)</li>
+      <li><a href="https://maggieappleton.com/paintingroam">Painting Roam</a></li>
+      <li><a href="https://htmlcheatsheet.com/css/">CSS Cheat Sheet</a></li>
+    </ul>
+  </li>
+  <li>Roam themes:
+    <ul>
+      <li><a href="https://roamresearch.com/#/app/help/page/fJRcVITNY">RoamCult Themes</a></li>
+      <li><a href="https://roamthemes.io/">Roam Themes</a></li>
+      <li><a href="https://gist.github.com/kipply/a42c66b5b962d07b5f4bc37812c21e00">Roam theme tester</a></li>
+    </ul>
+  </li>
+  <li>Help with Roam CSS:
+    <ul>
+      <li><a href="https://roamresearch.slack.com/join/shared_invite/zt-ft43m4mo-DDXHHaguKCIEgU09P1ittA#/">Roam Slack</a> (join the #css-themes channel)</li>
+      <li><a href="https://forum.roamresearch.com">Roam Forum</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Let me know on <a href="https://twitter.com/maggied">twitter</a> or in Roam slack/the forums if there are cool snippets I’ve missed, or more you’d like to see.</p>
+
+  </div><a class="u-url" href="/2020/09/05/roamcsssnippets.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Maggie Delano</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Maggie Delano</li><li><a class="u-email" href="mailto:mdelano1@swarthmore.edu">mdelano1@swarthmore.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/maggiedelano"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">maggiedelano</span></a></li><li><a href="https://www.twitter.com/maggied"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">maggied</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Maggie Delano is an Assistant Professor at Swarthmore College working on medical devices for patients with chronic diseases. She&#39;s also interested in inclusive engineering design.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
+
+

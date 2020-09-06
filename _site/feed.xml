@@ -1,4 +1,213 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-04T22:05:03-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Maggie Delano</title><subtitle>Maggie Delano is an Assistant Professor at Swarthmore College working on medical devices for patients with chronic diseases. She's also interested in inclusive engineering design.</subtitle><entry><title type="html">Website Revamp!</title><link href="http://localhost:4000/2020/07/12/website-revamp.html" rel="alternate" type="text/html" title="Website Revamp!" /><published>2020-07-12T00:00:00-04:00</published><updated>2020-07-12T00:00:00-04:00</updated><id>http://localhost:4000/2020/07/12/website-revamp</id><content type="html" xml:base="http://localhost:4000/2020/07/12/website-revamp.html">&lt;p&gt;Greetings from my new website! I had a little time this weekend, and to distract myself from the hellhole that is 2020, I decided to port my previous site (which was mostly handwritten in HTML with a header and some organization using &lt;a href=&quot;https://getbootstrap.com/&quot; title=&quot;bootstrap&quot;&gt;bootstrap&lt;/a&gt; and hosted on Swarthmore’s servers) to &lt;a href=&quot;https://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt;, with hosting on &lt;a href=&quot;https://pages.github.com/&quot; title=&quot;GitHub Pages&quot;&gt;GitHub Pages&lt;/a&gt;. I wanted to be able to combine my website and former tumblr blog into one, and Jekyll seemed like an easy way to do that. I considered porting to &lt;a href=&quot;https://www.gatsbyjs.org/&quot; title=&quot;Gatsby&quot;&gt;Gatsby&lt;/a&gt;, but I know nothing about &lt;a href=&quot;https://reactjs.org/&quot; title=&quot;React&quot;&gt;React&lt;/a&gt; or &lt;a href=&quot;https://graphql.org/&quot; title=&quot;GraphQL&quot;&gt;GraphQL&lt;/a&gt; and learning seemed like much more than a weekend project. As it was, I had “fun” trying to figure out how to vertically align my photo and my contact information on the main page, while also being responsive / looking good on both desktop and mobile, so it seems 12 year old software is advanced enough for my limited web programming skills. But hey, I did finally learn the basics of CSS. Here’s a tour of the changes I made.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-05T21:00:28-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Maggie Delano</title><subtitle>Maggie Delano is an Assistant Professor at Swarthmore College working on medical devices for patients with chronic diseases. She's also interested in inclusive engineering design.</subtitle><entry><title type="html">Make Your Roam Theme Your Own With These CSS Snippets</title><link href="http://localhost:4000/2020/09/05/roamcsssnippets.html" rel="alternate" type="text/html" title="Make Your Roam Theme Your Own With These CSS Snippets" /><published>2020-09-05T00:00:00-04:00</published><updated>2020-09-05T00:00:00-04:00</updated><id>http://localhost:4000/2020/09/05/roamcsssnippets</id><content type="html" xml:base="http://localhost:4000/2020/09/05/roamcsssnippets.html">&lt;p&gt;There are a lot of amazing themes for &lt;a href=&quot;https://roamresearch.com/&quot;&gt;Roam Research&lt;/a&gt;, many of which come with custom CSS enhancements in addition to changing the default colors. But to fully customize your experience you sometimes want to add custom CSS to an existing theme (or your own theme). Here’s a collection of CSS snippets that can help make your Roam CSS theme really feel like your own.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#setup&quot; id=&quot;markdown-toc-setup&quot;&gt;Setup&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#custom-tags&quot; id=&quot;markdown-toc-custom-tags&quot;&gt;Custom Tags&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#custom-pages&quot; id=&quot;markdown-toc-custom-pages&quot;&gt;Custom Pages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#turn-page-brackets-off&quot; id=&quot;markdown-toc-turn-page-brackets-off&quot;&gt;Turn page brackets off&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#pretty-block-references&quot; id=&quot;markdown-toc-pretty-block-references&quot;&gt;Pretty Block References&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#round-checkbox&quot; id=&quot;markdown-toc-round-checkbox&quot;&gt;Round checkbox&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#styling-aliases-and-links&quot; id=&quot;markdown-toc-styling-aliases-and-links&quot;&gt;Styling aliases and links&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#customize-queries&quot; id=&quot;markdown-toc-customize-queries&quot;&gt;Customize Queries&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#writing-your-own-snippets&quot; id=&quot;markdown-toc-writing-your-own-snippets&quot;&gt;Writing Your Own Snippets&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#resources&quot; id=&quot;markdown-toc-resources&quot;&gt;Resources&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
+
+&lt;p&gt;To use the snippets, you’ll need to set up &lt;a href=&quot;https://forum.roamresearch.com/t/awesome-css-for-beginners-and-intermediates/593/7&quot;&gt;custom CSS&lt;/a&gt; for your database if you haven’t already. I recommend using the &lt;a href=&quot;https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en&quot;&gt;Stylus Chrome Extension&lt;/a&gt;, but you can also use the native [[roam/css]] page. Using a fully fledged theme in addition to these snippets is optional.&lt;/p&gt;
+
+&lt;h1 id=&quot;custom-tags&quot;&gt;Custom Tags&lt;/h1&gt;
+
+&lt;p&gt;One of the best ways to customize your Roam CSS is custom tags. You can use the custom tags to indicate a type of note, to help visually organize your daily notes, etc. For example, I use custom tags as part of my daily notes template:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/rmdaily.png&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This styling includes emoji that are placed before the tag (using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;::before&lt;/code&gt; pseudo class), and then additional styling for the text itself. You can also style tags based on phrases that they start with, end with, or contain. This tag style was created and popularized by &lt;a href=&quot;https://maggieappleton.com/paintingroam&quot;&gt;Maggie Appleton&lt;/a&gt;. Here’s the relevant CSS snippet (&lt;a href=&quot;https://github.com/theianjones/roam-research-themes/blob/master/mappletons.css&quot;&gt;source&lt;/a&gt; for first two selectors):&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;/* add content before a tag (change yourTagHere to the tag)
+   you can also add content ::after */&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;span&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.rm-page-ref&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;yourTagHere&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;::before&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot;💭 &quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;/* style tag text */&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;span&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.rm-page-ref&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;yourTagHere&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#31b350&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;7px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;600&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;/* style tag starting with text 
+   you can substitute $= for &quot;ends with&quot; and *= for &quot;includes&quot; */&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;span&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.rm-page-ref&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;Evergreen&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#25883d&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;600&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;custom-pages&quot;&gt;Custom Pages&lt;/h1&gt;
+
+&lt;p&gt;Pages and tags in Roam are functionally equivalent, but are styled differently. I style pages for specific namespaces using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data-link-title^=&lt;/code&gt;, and dates using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data-link-title$=&quot;2020&quot;&lt;/code&gt;. As with tags, you can add content before and after each page. Here are some examples:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/rmpages.png&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And here’s the css (&lt;a href=&quot;https://github.com/jmharris903/Railscast-for-Roam-Research-Theme&quot;&gt;source&lt;/a&gt; for first two selectors):&lt;/p&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;/* add content before a page (change yourTagHere to the tag)
+   you can also add content ::after */&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;span&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-link-title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;yourTagHere&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;::before&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot;💭 &quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;/* style tag text */&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;span&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-link-title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;yourTagHere&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#31b350&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;7px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;600&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;/* add a calendar to all dates (pages that end w/ 2020...)
+   you can substitute $= for &quot;ends with&quot; and *= for &quot;includes&quot; */&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;span&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-link-title&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;2020&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.rm-page-ref-link-color&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;::before&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot;🗓 &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;turn-page-brackets-off&quot;&gt;Turn page brackets off&lt;/h1&gt;
+
+&lt;p&gt;While you can toggle brackets in Roam on and off using Ctrl-c then Ctrl-b, you can also disable them in CSS (&lt;a href=&quot;https://github.com/theianjones/roam-research-themes/blob/master/mappletons.css&quot;&gt;source&lt;/a&gt;):&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.rm-page-ref-brackets&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;pretty-block-references&quot;&gt;Pretty Block References&lt;/h1&gt;
+
+&lt;p&gt;While the default block reference styling is very clear, Maggie Appleton created a prettier version of block references (&lt;a href=&quot;https://github.com/theianjones/roam-research-themes/blob/master/mappletons.css&quot;&gt;source&lt;/a&gt;):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/rmref.png&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;/* add vertical line before block reference*/&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.rm-block-ref&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;::before&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inline-block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;40px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;12px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#ff913c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;margin-right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;8px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;/* turn off underlining */&lt;/span&gt; 
+&lt;span class=&quot;nc&quot;&gt;.rm-block-ref&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;border-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;round-checkbox&quot;&gt;Round checkbox&lt;/h1&gt;
+
+&lt;p&gt;Some people like round checkboxes for their to dos in Roam; now you can have that with this short snippet! (thanks to David on &lt;a href=&quot;https://roamresearch.slack.com/join/shared_invite/zt-ft43m4mo-DDXHHaguKCIEgU09P1ittA#/&quot;&gt;Roam Slack&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/rmcheckbox.png&quot; width=&quot;40%&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.checkmark&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50%&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;styling-aliases-and-links&quot;&gt;Styling aliases and links&lt;/h1&gt;
+
+&lt;p&gt;In addition to page refs with brackets &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[[]]&lt;/code&gt;, you can use aliases for external links, links to blocks, and links to pages (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[]()&lt;/code&gt;). This CSS snippet allows you to style each of these different types of links, including links for specific Roam databases (thanks to Steven Salka on &lt;a href=&quot;https://roamresearch.slack.com/join/shared_invite/zt-ft43m4mo-DDXHHaguKCIEgU09P1ittA#/&quot;&gt;Roam Slack&lt;/a&gt;):&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;/* style external, block, and page aliases 
+   move to their own block to alter individually */&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.rm-alias-external&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.rm-alias-block&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.rm-alias-page&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;/* style links to specific Roam DB (change db_name) */&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;url: https://roamresearch.com/#/app/db_name/&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;customize-queries&quot;&gt;Customize Queries&lt;/h1&gt;
+
+&lt;p&gt;Queries are a powerful component of Roam, but they have a lot of extra context that is not always necessary (for example, when using queries for to do lists or project management). &lt;a href=&quot;https://github.com/jmharris903/Railscast-for-Roam-Research-Theme&quot;&gt;Jeff Harris&lt;/a&gt; and &lt;a href=&quot;http://mattgoldenberg.net/2020/05/18/todoist-to-roam-research-advanced-task-management-in-roam/&quot;&gt;Matt Goldenberg&lt;/a&gt; have developed custom CSS to hide different parts of the query, including the title, breadcrumbs, and query string:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;c&quot;&gt;/* RR change: MINIMIZE QUERIES: add any one of the following tags before the beginning of your query (in the same block):
+
+    #min-title = hides the page reference link / page title
+    #min-con = hides the contextual reference information (breadcrumbs)
+    #minimal = hides both the title and the context
+    #min-q = hides the query string, similar to legacy behavior
+    #min-all = hides everything — title, context, and query string
+
+inspired by Matt Goldenberg */&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;minimal&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt; 
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;minimal&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.rm-query&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.rm-title-arrow-wrapper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;minimal&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.rm-query&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.zoom-mentions-view&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* hide page reference (title) and mention context (breadcrumbs) */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;min-title&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;min-title&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.rm-query&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.rm-title-arrow-wrapper&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* hide page reference (title) */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;min-con&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;min-con&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.rm-query&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.zoom-mentions-view&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;/* hide mention context (breadcrumbs) */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;min-q&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt; 
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;min-q&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.rm-query&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.rm-query-title&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;/* hide the query string */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;min-all&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt; 
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;min-all&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.rm-query&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.zoom-mentions-view&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;min-all&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.rm-query&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.rm-title-arrow-wrapper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;min-all&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.rm-query&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.rm-query-title&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;/* hide everything */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;minimal&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.rm-query&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.rm-query-title&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;::after&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;min-title&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.rm-query&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.rm-query-title&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;::after&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;data-tag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;min-con&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.rm-query&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.rm-query-title&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;::after&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot; #minimal&quot;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* add a tag to the query string to indicate this query has been minimized */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;writing-your-own-snippets&quot;&gt;Writing Your Own Snippets&lt;/h1&gt;
+
+&lt;p&gt;My advice for writing your own CSS snippets is to take a little time to complete this &lt;a href=&quot;https://www.khanacademy.org/computing/computer-programming/html-css/intro-to-css/pt/css-selecting-by-class&quot;&gt;Basic CSS Tutorial&lt;/a&gt;, and then start poking around in Roam using the &lt;a href=&quot;https://developers.google.com/web/tools/chrome-devtools/css&quot;&gt;inspector&lt;/a&gt;. The tutorial is helpful because once you identify the class you’d like to modify you may still need help figuring out how to write the appropriate selector. You can also browse around in existing Roam themes and mix and match what works for you.&lt;/p&gt;
+
+&lt;h1 id=&quot;resources&quot;&gt;Resources&lt;/h1&gt;
+
+&lt;p&gt;Here’s a more complete set of references I’ve found helpful:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Learning CSS:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.khanacademy.org/computing/computer-programming/html-css/intro-to-css/pt/css-selecting-by-class&quot;&gt;Basic CSS Tutorial&lt;/a&gt; (Khan Academy)&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://developers.google.com/web/tools/chrome-devtools/css&quot;&gt;Get Started With Viewing And Changing CSS&lt;/a&gt; (for Chrome, similar in other browsers)&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://maggieappleton.com/paintingroam&quot;&gt;Painting Roam&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://htmlcheatsheet.com/css/&quot;&gt;CSS Cheat Sheet&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Roam themes:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://roamresearch.com/#/app/help/page/fJRcVITNY&quot;&gt;RoamCult Themes&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://roamthemes.io/&quot;&gt;Roam Themes&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://gist.github.com/kipply/a42c66b5b962d07b5f4bc37812c21e00&quot;&gt;Roam theme tester&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Help with Roam CSS:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://roamresearch.slack.com/join/shared_invite/zt-ft43m4mo-DDXHHaguKCIEgU09P1ittA#/&quot;&gt;Roam Slack&lt;/a&gt; (join the #css-themes channel)&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://forum.roamresearch.com&quot;&gt;Roam Forum&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let me know on &lt;a href=&quot;https://twitter.com/maggied&quot;&gt;twitter&lt;/a&gt; or in Roam slack/the forums if there are cool snippets I’ve missed, or more you’d like to see.&lt;/p&gt;</content><author><name></name></author><summary type="html">There are a lot of amazing themes for Roam Research, many of which come with custom CSS enhancements in addition to changing the default colors. But to fully customize your experience you sometimes want to add custom CSS to an existing theme (or your own theme). Here’s a collection of CSS snippets that can help make your Roam CSS theme really feel like your own.</summary></entry><entry><title type="html">Website Revamp!</title><link href="http://localhost:4000/2020/07/12/website-revamp.html" rel="alternate" type="text/html" title="Website Revamp!" /><published>2020-07-12T00:00:00-04:00</published><updated>2020-07-12T00:00:00-04:00</updated><id>http://localhost:4000/2020/07/12/website-revamp</id><content type="html" xml:base="http://localhost:4000/2020/07/12/website-revamp.html">&lt;p&gt;Greetings from my new website! I had a little time this weekend, and to distract myself from the hellhole that is 2020, I decided to port my previous site (which was mostly handwritten in HTML with a header and some organization using &lt;a href=&quot;https://getbootstrap.com/&quot; title=&quot;bootstrap&quot;&gt;bootstrap&lt;/a&gt; and hosted on Swarthmore’s servers) to &lt;a href=&quot;https://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt;, with hosting on &lt;a href=&quot;https://pages.github.com/&quot; title=&quot;GitHub Pages&quot;&gt;GitHub Pages&lt;/a&gt;. I wanted to be able to combine my website and former tumblr blog into one, and Jekyll seemed like an easy way to do that. I considered porting to &lt;a href=&quot;https://www.gatsbyjs.org/&quot; title=&quot;Gatsby&quot;&gt;Gatsby&lt;/a&gt;, but I know nothing about &lt;a href=&quot;https://reactjs.org/&quot; title=&quot;React&quot;&gt;React&lt;/a&gt; or &lt;a href=&quot;https://graphql.org/&quot; title=&quot;GraphQL&quot;&gt;GraphQL&lt;/a&gt; and learning seemed like much more than a weekend project. As it was, I had “fun” trying to figure out how to vertically align my photo and my contact information on the main page, while also being responsive / looking good on both desktop and mobile, so it seems 12 year old software is advanced enough for my limited web programming skills. But hey, I did finally learn the basics of CSS. Here’s a tour of the changes I made.&lt;/p&gt;
 
 &lt;!--* TOC
 //{:toc}--&gt;
@@ -266,6 +475,4 @@ permalink: /blog/
   &lt;li&gt;Deleted the Gmail application from my phone.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Despite all this effort, I’ve still checked my email at least three times while writing this post. I think this will be a real challenge, but I’m interested to see where it goes. I’ll report back when I get home.&lt;/p&gt;</content><author><name></name></author><category term="email" /><category term="vacation" /><category term="emailvacation" /><category term="habits" /><summary type="html">Grad school has been particularly stressful and hectic the past few months, so I’m super excited to be taking a 10 day vacation starting tomorrow. I’ll be flying to Portland, then to SF, then to Las Vegas, and then back home to Boston!</summary></entry><entry><title type="html">A Code of Conduct</title><link href="http://localhost:4000/2014/07/06/a-code-of-conduct.html" rel="alternate" type="text/html" title="A Code of Conduct" /><published>2014-07-06T16:14:53-04:00</published><updated>2014-07-06T16:14:53-04:00</updated><id>http://localhost:4000/2014/07/06/a-code-of-conduct</id><content type="html" xml:base="http://localhost:4000/2014/07/06/a-code-of-conduct.html">&lt;p&gt;&lt;a href=&quot;http://quantifiedself.com/2014/06/code-conduct/&quot;&gt;A Code of Conduct&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I wrote this blog post for the Quantified Self blog. I’m excited to see where these improvements take us as a community.&lt;/p&gt;</content><author><name></name></author><category term="quantified self" /><category term="code of conduct" /><summary type="html">A Code of Conduct</summary></entry></feed>
+&lt;p&gt;Despite all this effort, I’ve still checked my email at least three times while writing this post. I think this will be a real challenge, but I’m interested to see where it goes. I’ll report back when I get home.&lt;/p&gt;</content><author><name></name></author><category term="email" /><category term="vacation" /><category term="emailvacation" /><category term="habits" /><summary type="html">Grad school has been particularly stressful and hectic the past few months, so I’m super excited to be taking a 10 day vacation starting tomorrow. I’ll be flying to Portland, then to SF, then to Las Vegas, and then back home to Boston!</summary></entry></feed>
