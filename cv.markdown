@@ -9,6 +9,10 @@ permalink: /publications/
 
 Please see my <a href="../cv_mkd.pdf" target="_blank">CV</a> for additional information.
 
+\* = contributed equally
+
+* Kendra Albert\*, **Maggie Delano**\*, "This Whole Thing Smacks of Gender": Algorithmic Exclusion in Bioimpedance-based Body Composition Analysis. _ACM Conference on Fairness, Accountability, and Transparency (ACM FAccT)_, March 2021. [arXiv](https://arxiv.org/abs/2101.08325)
+* Kendra Albert\*, **Maggie Delano**\*, Jon Penney\*, Afsaneh Rigot\*, Ram Shankar Siva Kumar\*, Ethical Testing in the Real World: Evaluating Physical Testing of Adversarial Machine Learning. _Neural Information Processing Systems Conference, Workshop on Dataset Curation and Security and Workshop on Navigating the Broader Impacts of AI Research_, December 2020. [arXiv](https://arxiv.org/abs/2012.02048)
 * Ke Wang, Dylan Zelko, **Maggie Delano**, Textile band electrodes as an alternative to spot Ag/AgCl electrodes for calf bioimpedance measurements. _Biomedical Physics & Engineering Express_, 6(1), 2019. [doi](https://doi.org/10.1088/2057-1976/ab5b02)
 * **Maggie Delano** and Charlie Sodini, Evaluating calf bioimpedance measurements for fluid overload management in a controlled environment. _Physiological Measurement_, November 2018. [doi](http://dx.doi.org/10.1088/1361-6579/aaf277)
  * **Maggie Delano** and Charlie Sodini, Electrode Placement for Calf Bioimpedance Measurements During Hemodialysis. _Annual International Conference of the IEEE Engineering in Medicine and Biology Society_, 2018:5910-5913. [doi](http://dx.doi.org/10.1109/EMBC.2018.8513563)
