@@ -10,27 +10,20 @@ permalink: /resources/
 <!--Requesting a recommendation? Read these instructions and fill out the associated form.-->
 
 
-# Fall 2020 Course Offerings
+# Spring 2021 Course Offerings
 
-Both of my courses will be offered remotely this semester:  
-
-- **[ENGR 015](https://www.notion.so/ENGR-015-FA20-a392ebe3632e4205898bb0eac788629e "ENGR 015"){:target="_blank"}: Fundamentals of Digital and Embedded Systems** (co-taught with [Erik Cheever](http://www.swarthmore.edu/NatSci/echeeve1/ "Erik Cheever's Website"){:target="_blank"})
-	- Scheduled lecture time: Tuesday/Thursday 11:45am--1pm EDT. 
-	- Office hours: Mondays 3pm-5pm EDT, or [by appointment](https://calendly.com/maggiedelano/meet "Calendly"){:target="_blank"}.
-	- Conferencing and other details are available on the course Moodle page.
-
-- **[ENGR 053](https://www.notion.so/ENGR-053-FA20-aab6498961fe4d3d85c9d9f31e0cdbef "ENGR 053"){:target="_blank"}: Inclusive Engineering Design**
-	- Scheduled lecture time: Tuesday/Thursday 3:45pm--5pm EDT. 
-	- Office hours: [by appointment](https://calendly.com/maggiedelano/meet "Calendly"){:target="_blank"}.
-	- Conferencing and other details are available on the course Moodle page.
-	- Learn more about the motivation for this course on the [Engineering Inclusively Blog](https://engineeringinclusively.com/ "Engineering Inclusively Blog"){:target="_blank"}.
+**[ENGR 025](https://www.notion.so/ENGR-025-CPSC-052-SP21-692e301ccc614a0a8e6fd1e41c328e04 "ENGR 025"){:target="_blank"}: Principles of Computer Architecture**
+- Scheduled lecture time: Tuesday/Thursday 11:45am--1pm Eastern
+- Office hours: [by appointment](https://calendly.com/maggiedelano/meet "Calendly"){:target="_blank"}
+- Conferencing and other details are available on the course Moodle page.
 
 # Courses Taught
 
 Any syllabi, problem sets, labs, and notes not posted here are available [upon request](mailto:mdelano1@swarthmore.edu).
 
-- ENGR 015: Fundamentals of Digital and Embedded Systems (FA18, FA19 ([OneNote](https://onedrive.live.com/View.aspx?resid=47217E65623C94A4!696&wd=target(L1%20-%20Intro%20to%20Digital%20and%20Embedded%20Systems.one%7Cba453a63-4f1e-7743-bf8e-4a5ee0f920c6/Welcome%20to%20E15%20Lecture!%7C73693423-29d8-4e4d-a453-01b444eca588/%29&authkey=!AE19_DxyrJdg534){:target="_blank"})), FA20)
-- ENGR 025: Principles of Computer Architecture (SP19, [SP21](https://catalog.swarthmore.edu/preview_course.php?catoid=7&coid=8096 "ENGR 025"){:target="_blank"})
+- ENGR 053: Inclusive Engineering Design ([FA20](https://www.notion.so/ENGR-053-FA20-aab6498961fe4d3d85c9d9f31e0cdbef "ENGR 053"){:target="_blank"})
+- ENGR 015: Fundamentals of Digital and Embedded Systems (FA18, [FA19](https://onedrive.live.com/View.aspx?resid=47217E65623C94A4!696&wd=target(L1%20-%20Intro%20to%20Digital%20and%20Embedded%20Systems.one%7Cba453a63-4f1e-7743-bf8e-4a5ee0f920c6/Welcome%20to%20E15%20Lecture!%7C73693423-29d8-4e4d-a453-01b444eca588/%29&authkey=!AE19_DxyrJdg534){:target="_blank"}), [FA20](https://www.notion.so/ENGR-015-FA20-a392ebe3632e4205898bb0eac788629e "ENGR 015"){:target="_blank"})
+- ENGR 025: Principles of Computer Architecture (SP19, [SP21](https://www.notion.so/ENGR-025-CPSC-052-SP21-692e301ccc614a0a8e6fd1e41c328e04 "ENGR 025"){:target="_blank"})
 - ENGR 029: Embedded Systems (SP18, SP19, SP20)
 - ENGR 053: Inclusive Engineering Design (FA20)
 

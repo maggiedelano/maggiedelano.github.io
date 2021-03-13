@@ -3,7 +3,7 @@
     [
         {
             "follow_symlinks": true,
-            "path": "/Users/maggied/website/"
+            "path": "."
         }
     ],
 
@@ -11,8 +11,8 @@
     {
         "Jekyll":
         {
-            "jekyll_posts_path": "/Users/maggied/website/_posts",
-            "jekyll_drafts_path": "/Users/maggied/website/_drafts",
+            "jekyll_posts_path": "/Users/mdelano1/website/_posts",
+            "jekyll_drafts_path": "/Users/mdelano1/website/_drafts",
         }
     }
 }

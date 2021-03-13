@@ -20,7 +20,7 @@ layout: home
                 Email: <a href="mailto:mdelano1@swarthmore.edu">mdelano1@swarthmore.edu</a> <br>
                 Phone: 610-328-8295 <br>
                 <br>
-                Fall 2020 Office Hours: TBD
+                Spring 2021 Office Hours: <a href="https://calendly.com/maggiedelano/meet" target="_blank">by appointment</a>
         </div>
     </div>
 </html>
