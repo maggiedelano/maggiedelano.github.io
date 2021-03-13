@@ -25,7 +25,6 @@ Any syllabi, problem sets, labs, and notes not posted here are available [upon r
 - ENGR 015: Fundamentals of Digital and Embedded Systems (FA18, [FA19](https://onedrive.live.com/View.aspx?resid=47217E65623C94A4!696&wd=target(L1%20-%20Intro%20to%20Digital%20and%20Embedded%20Systems.one%7Cba453a63-4f1e-7743-bf8e-4a5ee0f920c6/Welcome%20to%20E15%20Lecture!%7C73693423-29d8-4e4d-a453-01b444eca588/%29&authkey=!AE19_DxyrJdg534){:target="_blank"}), [FA20](https://www.notion.so/ENGR-015-FA20-a392ebe3632e4205898bb0eac788629e "ENGR 015"){:target="_blank"})
 - ENGR 025: Principles of Computer Architecture (SP19, [SP21](https://www.notion.so/ENGR-025-CPSC-052-SP21-692e301ccc614a0a8e6fd1e41c328e04 "ENGR 025"){:target="_blank"})
 - ENGR 029: Embedded Systems (SP18, SP19, SP20)
-- ENGR 053: Inclusive Engineering Design (FA20)
 
 # Other Resources
 
