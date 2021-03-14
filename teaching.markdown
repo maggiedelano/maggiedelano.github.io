@@ -3,8 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
-title: Resources
-permalink: /resources/
+title: Teaching
+permalink: /teaching/
 ---
 
 <!--Requesting a recommendation? Read these instructions and fill out the associated form.-->
@@ -26,12 +26,9 @@ Any syllabi, problem sets, labs, and notes not posted here are available [upon r
 - ENGR 025: Principles of Computer Architecture (SP19, [SP21](https://www.notion.so/ENGR-025-CPSC-052-SP21-692e301ccc614a0a8e6fd1e41c328e04 "ENGR 025"){:target="_blank"})
 - ENGR 029: Embedded Systems (SP18, SP19, SP20)
 
-# Other Resources
+# Resources
 
 - [Arduino Language Reference](https://www.arduino.cc/reference/en/){:target="_blank"} (for any Arduino-compatible boards, including the [Circuit Playground Classic](https://www.adafruit.com/product/3000 "Circuit Playground Classic") used in ENGR 015)
 - [Teaching with OneNote](https://blogs.swarthmore.edu/its/2020/06/23/using-onenote-for-teaching/){:target="_blank"}
 - [Swarthmore Engineering Catalog Entry](https://catalog.swarthmore.edu/preview_program.php?catoid=7&poid=262){:target="_blank"}
 - [Swarthmore Engineering Courses](https://www.swarthmore.edu/engineering/courses){:target="_blank"}
-- [Engineering Inclusively Blog](https://engineeringinclusively.com/ "Engineering Inclusively Blog"){:target="_blank"}
-- [I tried tracking my period and it was even worse than I could have imagined](https://medium.com/@maggied/i-tried-tracking-my-period-and-it-was-even-worse-than-i-could-have-imagined-bb46f869f45 "I tried tracking my period and it was even worse than I could have imagined"){:target="_blank"} (my medium post on period trackers)
-- [The World is a Prison](https://logicmag.io/justice/the-world-is-a-prison/ "The World is a Prison") (collaborative work with [Kendra Albert](https://www.kendraalbert.com "Kendra Albert"){:target="_blank"})
