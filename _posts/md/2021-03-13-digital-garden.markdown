@@ -17,7 +17,7 @@ Once Ruby was ready, I could bundle the Jekyll template following the instructio
 
 ## Editing Markdown
 
-Part of this project was motivated by my desire to try out [Obsidian](https://obsidian.md/) to see how it might complement my use of [Roam Research](https://roamresearch.com/). To use Obsidian with the digital garden, open the `_notes` folder as a new vault. The digital garden supports page links using double brackets [[]] which is very convenient. There are some markdown files in the default template outside the `_notes` folder, which you can also open in Obsidian or another text editor. 
+Part of this project was motivated by my desire to try out [Obsidian](https://obsidian.md/) to see how it might complement my use of [Roam Research](https://roamresearch.com/). To use Obsidian with the digital garden, open the `_notes` folder as a new vault. The digital garden supports page links using double brackets [[]] which is very convenient. There are some markdown files in the default template outside the `_notes` folder, which you can also open in Obsidian or another text editor. If you have any issues, it could be with page titles. Check out [this post](https://refinedmind.co/obsidian-jekyll-workflow) for ideas.
 
 
 ## Faster Deployment
@@ -32,3 +32,5 @@ git commit -m $1
 git push
 
 ```
+
+To use the script, put this in a file with a `.sh` file extension. Use `chmod 755 <yourfile>.sh` to make it executable. Then type `./<yourfile>.sh "your commit message"` to commit. You will probably need to enter your credentials once but can then store it for the future. 
