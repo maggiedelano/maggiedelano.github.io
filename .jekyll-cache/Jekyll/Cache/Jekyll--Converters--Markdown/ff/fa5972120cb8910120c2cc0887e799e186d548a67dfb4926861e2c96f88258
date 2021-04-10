@@ -1,0 +1,20 @@
+I"c<p>I decided to switch from <a href="http://www.cadsoftusa.com/">Eagle</a> to <a href="http://www.altium.com/">Altium</a> for the next PCB I am designing for my PhD. While Altium is definitely a more professional tool, I found the startup time for my first design to be a bit longer than I would have liked. Below is a list of a few little things that seem simple in theory, but were non-intuitive for me to figure out the first time around (even with the help of google and the tutorial pdfs and videos).</p>
+
+<ul>
+  <li><strong>Where are all the components???</strong> - in the vault! Which is found in View &gt; Workspace Panels &gt; System &gt; Vaults</li>
+  <li><strong>Displaying Resistor/Capacitor values</strong> - not sure how to do it by default, but you can double click on a component after you’ve placed it to turn the “value” parameter on</li>
+  <li><strong>Place a wire in schematic (shortcut!) </strong>- the ‘p’ button brings up the place menu and the ‘w’ button places a wire</li>
+  <li><strong>Why are there “?” everywhere??? </strong> - you have to set up the designators! Find it under Tools &gt; Annotate schematics</li>
+  <li><strong>Why does Altium complain about floating sources, mismatched I/O pins, etc.? </strong> - The default connection matrix is a bit unintuitive, and won’t always recognize capacitively coupled connections. You can adjust it in Project &gt; Project Options &gt; Connection Matrix</li>
+  <li><strong>I am placing a multi-part component but only see the first part. Help! </strong> - When you place the part, right click first and then select the first part, then after placement it will allow you to place the remaining parts.</li>
+  <li><strong>OK, I’m ready to layout my PCB. Now what? </strong> - Be sure you annotate your schematics so there are no components with “?”. Create a new PCB file in your project. Then, from a schematic view, hit Design &gt; Update PCB Document. Your components should be imported into your new PCB file.</li>
+  <li><strong>How do I start routing interactively? </strong> - ‘p’ for place, then ’t’ to start routing interactively.</li>
+  <li><strong>How do I update my design rules?</strong> - right click in PCB document &gt; Design &gt; Design Rules</li>
+  <li><strong>Help my ground plane is obstructing my view of everything!</strong> - Change the transparency! Right click on the layers below, select layer transparency &gt; signal layers and adjust the polygon transparency.</li>
+</ul>
+
+<p>I haven’t actually exported my gerbers yet, but I’ll add a section for that when I do.</p>
+
+<p>Other helpful stuff: <a href="http://www.johnstowers.co.nz/blog/pages/altium-designer-tips.html">This</a> article was really helpful for finding shortcuts quickly. <a href="http://wiki.altium.com/spaces/flyingpdf/pdfpageexport.action?pageId=3080293">This</a> PDF was helpful for creating my first library component. <a href="https://code.google.com/p/altium-designer-addons/downloads/detail?name=Libs_RRutledge%202013-01-30.zip&amp;can=2&amp;q=">These</a> libraries are useful for extra connectors and miscellaneous things not found in the Vault.</p>
+
+:ET
