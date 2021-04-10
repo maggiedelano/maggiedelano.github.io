@@ -41,6 +41,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # trying to get html in markdown to work
 kramdown:
