@@ -1,13 +1,4 @@
-I"í	<!--Requesting a recommendation? Read these instructions and fill out the associated form.-->
-
-<h1 id="spring-2021-course-offerings">Spring 2021 Course Offerings</h1>
-
-<p><strong><a href="https://www.notion.so/ENGR-025-CPSC-052-SP21-692e301ccc614a0a8e6fd1e41c328e04" title="ENGR 025" target="_blank">ENGR 025</a>: Principles of Computer Architecture</strong></p>
-<ul>
-  <li>Scheduled lecture time: Tuesday/Thursday 11:45amâ€“1pm Eastern</li>
-  <li>Office hours: <a href="https://calendly.com/maggiedelano/meet" title="Calendly" target="_blank">by appointment</a></li>
-  <li>Conferencing and other details are available on the course Moodle page.</li>
-</ul>
+I"ã<!--Requesting a recommendation? Read these instructions and fill out the associated form.-->
 
 <h1 id="courses-taught">Courses Taught</h1>
 
@@ -20,12 +11,16 @@
   <li>ENGR 029: Embedded Systems (SP18, SP19, SP20)</li>
 </ul>
 
-<h1 id="resources">Resources</h1>
+<h1 id="teaching-resources">Teaching Resources</h1>
+
+<p>Check out <a href="https://www.maggiedelano.com/garden/teaching-resources">this page</a>.</p>
+
+<h1 id="engineering-resources">Engineering Resources</h1>
 
 <ul>
   <li><a href="https://www.arduino.cc/reference/en/" target="_blank">Arduino Language Reference</a> (for any Arduino-compatible boards, including the <a href="https://www.adafruit.com/product/3000" title="Circuit Playground Classic">Circuit Playground Classic</a> used in ENGR 015)</li>
-  <li><a href="https://blogs.swarthmore.edu/its/2020/06/23/using-onenote-for-teaching/" target="_blank">Teaching with OneNote</a></li>
   <li><a href="https://catalog.swarthmore.edu/preview_program.php?catoid=7&amp;poid=262" target="_blank">Swarthmore Engineering Catalog Entry</a></li>
   <li><a href="https://www.swarthmore.edu/engineering/courses" target="_blank">Swarthmore Engineering Courses</a></li>
 </ul>
+
 :ET

@@ -9,14 +9,6 @@ permalink: /teaching/
 
 <!--Requesting a recommendation? Read these instructions and fill out the associated form.-->
 
-
-# Spring 2021 Course Offerings
-
-**[ENGR 025](https://www.notion.so/ENGR-025-CPSC-052-SP21-692e301ccc614a0a8e6fd1e41c328e04 "ENGR 025"){:target="_blank"}: Principles of Computer Architecture**
-- Scheduled lecture time: Tuesday/Thursday 11:45am--1pm Eastern
-- Office hours: [by appointment](https://calendly.com/maggiedelano/meet "Calendly"){:target="_blank"}
-- Conferencing and other details are available on the course Moodle page.
-
 # Courses Taught
 
 Any syllabi, problem sets, labs, and notes not posted here are available [upon request](mailto:mdelano1@swarthmore.edu).
@@ -26,9 +18,14 @@ Any syllabi, problem sets, labs, and notes not posted here are available [upon r
 - ENGR 025: Principles of Computer Architecture (SP19, [SP21](https://www.notion.so/ENGR-025-CPSC-052-SP21-692e301ccc614a0a8e6fd1e41c328e04 "ENGR 025"){:target="_blank"})
 - ENGR 029: Embedded Systems (SP18, SP19, SP20)
 
-# Resources
+# Teaching Resources
+
+Check out [this page](https://www.maggiedelano.com/garden/teaching-resources).
+
+# Engineering Resources
 
 - [Arduino Language Reference](https://www.arduino.cc/reference/en/){:target="_blank"} (for any Arduino-compatible boards, including the [Circuit Playground Classic](https://www.adafruit.com/product/3000 "Circuit Playground Classic") used in ENGR 015)
-- [Teaching with OneNote](https://blogs.swarthmore.edu/its/2020/06/23/using-onenote-for-teaching/){:target="_blank"}
 - [Swarthmore Engineering Catalog Entry](https://catalog.swarthmore.edu/preview_program.php?catoid=7&poid=262){:target="_blank"}
 - [Swarthmore Engineering Courses](https://www.swarthmore.edu/engineering/courses){:target="_blank"}
+
+
