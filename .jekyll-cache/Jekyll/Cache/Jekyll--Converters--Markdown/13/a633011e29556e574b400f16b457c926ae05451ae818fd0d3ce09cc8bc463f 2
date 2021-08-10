@@ -1,0 +1,148 @@
+I"�?<p>Greetings from my new website! I had a little time this weekend, and to distract myself from the hellhole that is 2020, I decided to port my previous site (which was mostly handwritten in HTML with a header and some organization using <a href="https://getbootstrap.com/" title="bootstrap">bootstrap</a> and hosted on Swarthmore’s servers) to <a href="https://jekyllrb.com/" title="Jekyll">Jekyll</a>, with hosting on <a href="https://pages.github.com/" title="GitHub Pages">GitHub Pages</a>. I wanted to be able to combine my website and former tumblr blog into one, and Jekyll seemed like an easy way to do that. I considered porting to <a href="https://www.gatsbyjs.org/" title="Gatsby">Gatsby</a>, but I know nothing about <a href="https://reactjs.org/" title="React">React</a> or <a href="https://graphql.org/" title="GraphQL">GraphQL</a> and learning seemed like much more than a weekend project. As it was, I had “fun” trying to figure out how to vertically align my photo and my contact information on the main page, while also being responsive / looking good on both desktop and mobile, so it seems 12 year old software is advanced enough for my limited web programming skills. But hey, I did finally learn the basics of CSS. Here’s a tour of the changes I made.</p>
+
+<!--* TOC
+//{:toc}-->
+
+<h1 id="jekyll-and-pages-setup">Jekyll and Pages Setup</h1>
+
+<p>I followed the <a href="https://jekyllrb.com/docs/installation/">Jekyll Installation Guide</a> to get started. There were a few minor hiccups getting things to work on macOS; I occasionally had to use <code class="language-plaintext highlighter-rouge">sudo</code> to execute certain lines of code, which made certain pages unwritable by my user. I fixed this using <code class="language-plaintext highlighter-rouge">chmod -R 775 jekyllSite</code> (assuming <code class="language-plaintext highlighter-rouge">jekyllSite</code> is the name of the folder with my Jekyll installation in it).</p>
+
+<p>Once the base Jekyll blog was setup, I moved on to configuration for <a href="https://pages.github.com/" title="GitHub pages">GitHub pages</a>.  GitHub pages has two different hosting modes: user/organization pages and project pages. They need to be setup slightly differently. To use the user page, I renamed my repo (previously called “website”) to “maggiedelano.github.io”, moved my old website completely out of the repository, and moved my Jekyll install into the root of the repository. GitHub pages then automatically served my Jekyll installation from the <code class="language-plaintext highlighter-rouge">master</code> branch. You can check that GitHub pages is serving by checking the repository settings on GitHub (it’s toward the bottom).</p>
+
+<h1 id="porting-tumblr-blog">Porting Tumblr Blog</h1>
+
+<p>To port my blog, I ran the following line on the command line while in the root Jekyll directory for the new blog:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="err">$</span> <span class="n">ruby</span> <span class="o">-</span><span class="n">r</span> <span class="n">rubygems</span> <span class="o">-</span><span class="n">e</span> <span class="s1">'require "jekyll-import";
+    JekyllImport::Importers::Tumblr.run({
+      "url"            =&gt; "https://maggiedelano.tumblr.com",
+      "format"         =&gt; "md", # or "md"
+      "grab_images"    =&gt; true,  # whether to download images as well.
+      "add_highlights" =&gt; false,  # whether to wrap code blocks (indented 4 spaces) in a Liquid "highlight" tag
+      "rewrite_urls"   =&gt; true   # whether to write pages that redirect from the old Tumblr paths to the new Jekyll paths
+    })'</span>
+</code></pre></div></div>
+
+<p>There are many other importers available <a href="https://import.jekyllrb.com/" title="Jekyll Importers">here</a>.</p>
+
+<h1 id="moving-blog-posts-to-blog">Moving Blog Posts to blog/</h1>
+
+<p>The Jekyll default theme is <a href="https://github.com/jekyll/minima" title="Minima">Minima</a>.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">1</a></sup> This theme displays the blog posts on the home page by default, with the option to add some content at the top before the blog posts begin using the <em>index.md</em> or <em>index.html</em> files in the root directory. I decided to change the layout for the home page and instead moved the code that produces the blog posts to its own file called <em>blog.md</em>. Minima then automatically created a link to the blog in the header.</p>
+
+<p>To change the layout for the home page, I had to add a new <em>_layouts/home.html</em> file. I ran <code class="language-plaintext highlighter-rouge">bundle info --path minima</code> to find where Minima’s default files are, and copied <em>home.html</em> to <em>_layouts/home.html</em>, removed the content related to blog posts, and saved the file. Any files in the same directory structure as the original Minima gem will automatically override anything inside the Minima gem when serving. (This does mean updating the theme will require more work later). Here’s the new blog page contents:<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">2</a></sup></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: default
+title: Blog
+permalink: /blog/
+---
+ <span class="nt">&lt;html&gt;</span>
+  {%- if site.posts.size &gt; 0 -%}
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"post-list-heading"</span><span class="nt">&gt;</span>{{ page.list_title | default: "Posts" }}<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"post-list"</span><span class="nt">&gt;</span>
+      {%- for post in site.posts -%}
+      <span class="nt">&lt;li&gt;</span>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"post-meta"</span><span class="nt">&gt;</span>{{ post.date | date: date_format }}<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;h3&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"post-link"</span> <span class="na">href=</span><span class="s">"{{ post.url | relative_url }}"</span><span class="nt">&gt;</span>
+            {{ post.title | escape }}
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/h3&gt;</span>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      <span class="nt">&lt;/li&gt;</span>
+      {%- endfor -%}
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"rss-subscribe"</span><span class="nt">&gt;</span>subscribe <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ "</span><span class="err">/</span><span class="na">feed.xml</span><span class="err">"</span> <span class="err">|</span> <span class="na">relative_url</span> <span class="err">}}"</span><span class="nt">&gt;</span>via RSS<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+  {%- endif -%}
+<span class="nt">&lt;html&gt;</span>
+</code></pre></div></div>
+
+<p>I used the <em>default</em> layout instead of <em>page</em> layout so it doesn’t put the page title at the top. The last thing I did was enable excerpts to show on the blog page, which can be done by adding the line <code class="language-plaintext highlighter-rouge">show_excerpts: true</code> to the <em>_config.yml</em> page.</p>
+
+<h1 id="fun-with-flexbox">Fun with Flexbox</h1>
+
+<p>One thing that continues to surprise me about web programming is how much of a pain it is to vertically align things and also be responsive. For example, consider the header on my webpage:</p>
+
+<p><img src="/images/mkd_header.png" alt="Header of maggiedelano.com" /></p>
+
+<p>I wanted a way to ensure that my face was vertically aligned with the text on the right. A relatively easy way to do this is with a table; unfortunately, when these elements are put into a table and viewed on mobile the image of my face shrinks to be tiny so that the full table can be displayed in the much narrower space. My solution ultimately was to use <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" title="flexbox">flexbox</a>, and size the header so that it is small enough to display on a phone will a small screen. (I could probably have also experimented with flex items, but this works well enough for now).</p>
+
+<p>Setting this up required writing some custom HTML and css.<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup> Since this is a small website, I hard-coded <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code>s for the whole block (<code class="language-plaintext highlighter-rouge">all\_together</code>), and then one each for the headshot and text so that I could write custom CSS for them.<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"all_together"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"headshot"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"MKD_headshot.jpg"</span> <span class="na">width=</span><span class="s">"300"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h2&gt;</span>Maggie Delano<span class="nt">&lt;/h2&gt;</span>
+            Assistant Professor <span class="nt">&lt;br&gt;</span>
+            Engineering Department <span class="nt">&lt;br&gt;</span>
+            Swarthmore College <span class="nt">&lt;br&gt;</span>
+            <span class="nt">&lt;br&gt;</span>
+            Office: Singer 233 <span class="nt">&lt;br&gt;</span>
+            Email: <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"mailto:mdelano1@swarthmore.edu"</span><span class="nt">&gt;</span>mdelano1@swarthmore.edu<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;br&gt;</span>
+            Phone: 610-328-8295 <span class="nt">&lt;br&gt;</span>
+            <span class="nt">&lt;br&gt;</span>
+            Fall 2020 Office Hours: TBD
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>Here’s the part I didn’t know how to do when I built my last website: vertical alignment with flexbox! This code was added to <em>_sass/minima/_layout.scss</em>.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">#all_together</span><span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">flex-direction</span><span class="p">:</span> <span class="n">row</span><span class="p">;</span>
+  <span class="nl">justify-content</span><span class="p">:</span> <span class="n">space-between</span><span class="p">;</span>
+  <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">flex-wrap</span><span class="p">:</span> <span class="n">wrap</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">25px</span><span class="p">;</span>
+<span class="p">}</span>   
+
+<span class="nf">#headshot</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#text</span> <span class="p">{</span>
+  <span class="err">@include</span> <span class="err">relative-font-size(0.9375);</span>
+  <span class="nl">margin-right</span><span class="p">:</span> <span class="m">75px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Flexbox has configuration settings for the parent container (in this case <code class="language-plaintext highlighter-rouge">#all_together</code>) and also for the individual items. In this case, I only needed to add CSS to the parent container. I chose the <code class="language-plaintext highlighter-rouge">flex-direction</code> to be a row and for it to wrap via <code class="language-plaintext highlighter-rouge">flex-wrap</code>; this way my headshot and contact information would show one after the other (headshot first) on a smaller page. <code class="language-plaintext highlighter-rouge">align-items</code> aligns everything to the center vertically. Lastly, I added a bottom margin to give things a little breathing room. For <code class="language-plaintext highlighter-rouge">#headshot</code>, I just ensured that the width was max 300px, and for <code class="language-plaintext highlighter-rouge">#text</code>, I used the same font size as the rest of the page and added a right margin to get it to line up the way I wanted in the page.</p>
+
+<h1 id="adding-a-publications-page">Adding a Publications Page</h1>
+
+<p>Once everything else was set up, adding a publications page was easy: I just wrote the whole thing in markdown and linked to my CV. Hurray!</p>
+
+<h1 id="custom-domain">Custom Domain</h1>
+
+<p>My last step was to set up GitHub pages to use a custom domain (www.maggiedelano.com). Fortunately following the <a href="https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site" title="GitHub custom domain instructions">instructions</a> went smoothly, though I also added a <a href="https://support.google.com/webmasters/answer/93633?hl=en">301 redirect</a> from maggiedelano.com to www.maggiedelano.com on my host provider (<a href="https://www.namecheap.com/" title="Namecheap">Namecheap</a>) because just typing maggiedelano.com in the browser without it wasn’t working anymore.</p>
+
+<p>And then I was done (zzz).</p>
+
+<h1 id="footnotes">Footnotes</h1>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:2" role="doc-endnote">
+      <p>The Minima files on GitHub are the latest under development, but by default my Jekyll installation came with an earlier version (2.5.1). I had to run <code class="language-plaintext highlighter-rouge">bundle info --path minima</code> to find the files actually being used locally by Jekyll. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:1" role="doc-endnote">
+      <p>Fun side note: I had to wrap the <code class="language-plaintext highlighter-rouge">&lt;html&gt;</code> tags in <code class="language-plaintext highlighter-rouge">{ % raw % } ... { % endraw % }</code> so that the Jekyll <a href="https://jekyllrb.com/docs/liquid/" title="Liquid">Liquid</a> parser would output the raw text and not all the blog posts on my site. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>I finally learned how CSS actually works by completing the CSS chapters of the Khan Academy <a href="https://www.khanacademy.org/computing/computer-programming/html-css" title="Intro to HTML/CSS: Making Webpages">Intro to HTML/CSS: Making Webpages</a> course. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>Writing custom CSS for the Minima version I am using requires copying <em>_sass/minima.scss</em> and then the contents of the <em>_sass/minima/</em> folder and then adding or editing accordingly. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET

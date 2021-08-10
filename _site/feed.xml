@@ -1,4 +1,109 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-06-10T18:24:44-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Maggie Delano</title><subtitle>Maggie Delano is an Assistant Professor at Swarthmore College working on medical devices for patients with chronic diseases. She's also interested in inclusive engineering design.</subtitle><entry><title type="html">New Digital Garden</title><link href="http://localhost:4000/2021/03/13/digital-garden.html" rel="alternate" type="text/html" title="New Digital Garden" /><published>2021-03-13T00:00:00-05:00</published><updated>2021-03-13T00:00:00-05:00</updated><id>http://localhost:4000/2021/03/13/digital-garden</id><content type="html" xml:base="http://localhost:4000/2021/03/13/digital-garden.html">&lt;p&gt;I’ve always wanted to keep an active blog, but despite having this aspiration for many years and revisiting it over and over, I’ve realized that my ideal way of sharing information might take a different form. For the next few weeks I am experimenting with a &lt;a href=&quot;/garden&quot;&gt;digital garden&lt;/a&gt;, focusing on curating pages and resources rather than writing discretized updates. Follow along there if you’d like to see what I’m up to. It took a little while longer to setup than I would have liked, so I’m sharing how I set it up to save others a headache.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-09T21:51:49-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Maggie Delano</title><subtitle>Maggie Delano is an Assistant Professor at Swarthmore College working on medical devices for patients with chronic diseases. She's also interested in inclusive engineering design.</subtitle><entry><title type="html">Summer Research Collaboration in Roam Research</title><link href="http://localhost:4000/2021/08/09/summer-research-in-roam.html" rel="alternate" type="text/html" title="Summer Research Collaboration in Roam Research" /><published>2021-08-09T00:00:00-04:00</published><updated>2021-08-09T00:00:00-04:00</updated><id>http://localhost:4000/2021/08/09/summer-research-in-roam</id><content type="html" xml:base="http://localhost:4000/2021/08/09/summer-research-in-roam.html">&lt;p&gt;As a professor at a small liberal arts college, most of my research gets done with a fresh group of 2-4 undergraduate students over the course of 10 weeks each summer. These students have to quickly ramp up on part of my research and make a contribution all before August vacation. This summer I wanted to develop a workflow that would enable students to get onboarded as quickly as possible, get help when they needed it (while leaving me some time to get my own stuff done), and also document their work for me and the next round of students that join in the future. I decided to conduct an experiment where my students and I used a combination of the instant messaging service &lt;a href=&quot;https://slack.com/&quot;&gt;Slack&lt;/a&gt; and the collaborative notetaking web app &lt;a href=&quot;https://roamresearch.com/&quot;&gt;Roam Research&lt;/a&gt; to conduct our research. I found the combination of real time messaging in Slack with the capability to record meeting notes and workflows in Roam to be a great combination that was easy for students to use and helpful for their planning and reflection if set up appropriately.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-slack-and-roam&quot;&gt;Why Slack and Roam&lt;/h2&gt;
+&lt;p&gt;I decided to use Slack because it enables real-time communication via both personal messaging (for private conversations) and public channels (so everyone knows what is going on and messages don’t have to be repeated). While there are many other services that do this as well, my students all already know how to use Slack and it is free for teams with limited messages, so it seemed like a good choice.&lt;/p&gt;
+
+&lt;p&gt;However, Slack doesn’t address things like documenting workflows, so I wanted another tool. In the past I used a research group wiki / knowledge base with documentation about how to get set up with different parts of the project, and project pages for each student. However, no one (even including myself) really used the knowledge base, and it felt like a chore to keep updated. I’ve been using Roam a lot lately, and feel that it is so much easier to start writing in, so I decided to try Roam out mostly as a glorified wiki and for daily/weekly stand ups.&lt;/p&gt;
+
+&lt;h2 id=&quot;implementation&quot;&gt;Implementation&lt;/h2&gt;
+&lt;p&gt;My implementation in Roam focused on sticking to the basics as much as possible. I relied heavily on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;roam/templates&lt;/code&gt; that students just needed to apply on the daily notes page or their personal page. I kept on immutable blocks, which means that users can only edit their own blocks unless someone places a child block under one of your own blocks. Block references were included in many of the templates, but students were not expected to make their own block references (though I did show them how to do it once). Students were also taught the basics of indentation, especially about indenting under the blocks generated by the templates shown below.&lt;/p&gt;
+
+&lt;p&gt;There were four components of the implementation this summer:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Onboarding&lt;/li&gt;
+  &lt;li&gt;Daily and weekly check ins&lt;/li&gt;
+  &lt;li&gt;Mid-summer check in&lt;/li&gt;
+  &lt;li&gt;Offboarding&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;onboarding&quot;&gt;Onboarding&lt;/h3&gt;
+&lt;p&gt;I onboarded my students by welcoming them in a Zoom meeting and adding them to the Slack server. I set up a dedicated channel for summer research. Next, I added them to Roam&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and a shared Google Drive folder. I showed the students how to create a Roam account and then sign in and open our shared graph. Pinned in the left sidebar was a page called “START HERE.” Inside that page was a brief introduction to Roam, along with instructions to create their own daily page.&lt;/p&gt;
+
+&lt;p&gt;I set up an onboarding template that included items like setting their display name, setting up software we use like &lt;a href=&quot;https://www.zotero.org/&quot;&gt;Zotero&lt;/a&gt;, instructions to prepare a research proposal, etc. Each of these tasks linked to a dedicated page in the graph as needed. I also had students practice making their first daily standup page during the onboarding template and checked in to make sure each student understood how to use the basics. I included some “Tips &amp;amp; Tricks” on the getting started page, and explained what the students should do each day and week.&lt;/p&gt;
+
+&lt;h3 id=&quot;daily-and-weekly-check-ins&quot;&gt;Daily and Weekly Check ins&lt;/h3&gt;
+&lt;p&gt;At the beginning of each day and week, students completed daily and weekly check in templates. The daily check in templates were completed on the daily notes page and the weekly check ins were on each student’s personal pages. The daily check looked like this:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[Name]]
+    &lt;ul&gt;
+      &lt;li&gt;[[Daily Stand Up]]
+        &lt;ul&gt;
+          &lt;li&gt;What did you accomplish yesterday?&lt;/li&gt;
+          &lt;li&gt;What are your plans for today and the coming week?&lt;/li&gt;
+          &lt;li&gt;Is there anything you are stuck on?&lt;/li&gt;
+          &lt;li&gt;Do you need anything from the team?&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I reviewed the student check ins each morning on my way to work and sent a message to the summer research channel in Slack saying good morning and responding to anything of note. I intentionally messaged the whole channel most of the time so students could see what other people had questions about or were working on.&lt;/p&gt;
+
+&lt;p&gt;The weekly meeting agenda looked like this (items in (()) were shown as comments in Roam hidden by a little astrolabe symbol):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[One on One Meeting Agenda]]
+    &lt;ul&gt;
+      &lt;li&gt;Follow up from last week: ((Insert action items from last week (if applicable), list their current status, and reflect on how the week went.))
+        &lt;ul&gt;
+          &lt;li&gt;[[Review]]
+            &lt;ul&gt;
+              &lt;li&gt;What were the goals from last week?&lt;/li&gt;
+              &lt;li&gt;What was completed?&lt;/li&gt;
+              &lt;li&gt;What was not completed?&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;[[Retrospective]]
+            &lt;ul&gt;
+              &lt;li&gt;What went well during the sprint / what is going well so far?&lt;/li&gt;
+              &lt;li&gt;What could be improved?&lt;/li&gt;
+              &lt;li&gt;What resources do you need moving forward?&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Goals for this week:((insert plans for this week here))&lt;/li&gt;
+      &lt;li&gt;Upcoming Deadlines: ((Insert specific upcoming deadlines (as needed).))&lt;/li&gt;
+      &lt;li&gt;Goals for Meeting: ((Insert the desired outcomes for the meeting, including specific topics to be discussed and decisions made.))&lt;/li&gt;
+      &lt;li&gt;Agenda: ((insert the meeting agenda here))&lt;/li&gt;
+      &lt;li&gt;Notes: ((Insert notes from meeting here.))&lt;/li&gt;
+      &lt;li&gt;Action Items: ((Insert action items, grouped by person, to be completed in the following week after the meeting.))&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I reviewed the meeting agenda quickly at the beginning of each meeting, and then let the student run the meeting itself. We both recorded action items for moving forward after the project.&lt;/p&gt;
+
+&lt;h3 id=&quot;mid-summer-check-in&quot;&gt;Mid-summer Check In&lt;/h3&gt;
+&lt;p&gt;Half way through the summer I had students complete a mid-summer check in. This check in included the review and retrospective sections like in a weekly review, and also included a self-assessment about research adapted from a &lt;a href=&quot;https://www.colorado.edu/eer/sites/default/files/attached-files/urssa_master_reviewcopy.pdf&quot;&gt;University of Colorado Boulder assessment&lt;/a&gt; about student assessment of learning gains from summer research. I used the Roam slider feature to allow students to score their learning gains from 1 to 10. We had extended one on ones that week and discussed their responses and what to focus on in the rest of the summer.&lt;/p&gt;
+
+&lt;h3 id=&quot;offboarding&quot;&gt;Offboarding&lt;/h3&gt;
+&lt;p&gt;At the end of the ninth of ten weeks, I created and shared an offboarding template with the students. This contained instructions in the same vein as the onboarding template, including expectations for a final research report, where to put important files, and an exit questionnaire about their experience with summer research and their experience using Roam.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-it-went&quot;&gt;How it Went&lt;/h2&gt;
+&lt;p&gt;Overall, I think Slack and Roam were a great combination. Slack allowed for conversation, with Roam dedicated to check ins and meeting notes. I think it would have been more confusing for everyone if we had tried to have any real conversations in Roam itself. But, since we were working a mix of in person and remote, it was not a problem to discuss over Slack or meet up in person or on Zoom.&lt;/p&gt;
+
+&lt;p&gt;Roam was much easier and more fun to use than a traditional wiki. Students said that writing on the daily notes page helped them stay organized and prioritize what to get done each day, and it was helpful for me to see what each student was working on and be able to answer quick questions based on their check in. The weekly template allowed for us to quickly get on the same page about what to discuss during the meeting, and what the action items were after the meeting.&lt;/p&gt;
+
+&lt;p&gt;It was also very useful to be able to document workflows. There were some pages that I created for onboarding purposes that we updated throughout the summer as needed, and students created their own pages to document workflows for the group in the future. One student noted that it was nice to be able to open up different pages in Roam without having to open multiple tabs like with Google Docs.&lt;/p&gt;
+
+&lt;p&gt;Ultimately we did not document everything in Roam; sometimes we still used Google Docs for writeups that involved a lot of images and formatting, or when multiple people needed to edit the document at the same time as immutable blocks make collaboration on a page very difficult.&lt;/p&gt;
+
+&lt;p&gt;One student commented that a downside of Roam was the lack of folders, and that pages were hard to find in the graph. I think the opacity of the graph database is something that can be hard to get used to with Roam in general, but I do think I could have made things easier to find by teaching students how to use queries and/or setting up specific tags for us to use when we created new pages. Right now the number of pages is small enough that one can simply look for the page on the all pages list, but as the graph grows more organization will be needed. I will probably use index pages instead of queries to make the graph more user friendly.&lt;/p&gt;
+
+&lt;h2 id=&quot;takeaways&quot;&gt;Takeaways&lt;/h2&gt;
+&lt;p&gt;My major takeaway from this experience is that a team of undergraduate students can work productively in Roam with the appropriate scaffolding through templates. Students were readily able to pick up things like formatting text, but we did not explore more advanced topics such as block references or queries. At this basic level, Roam is good for coordinating and checking in on projects, but not for something more complex like group sense-making through e.g. zettelkasten. Still, even for professional teams a simple workflow like this one could be a good way to start, only introducing complexity as the size of the database grows and individual users become more comfortable with the tool.&lt;/p&gt;
+
+&lt;h2 id=&quot;notes&quot;&gt;Notes&lt;/h2&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;While Roam is not free if one is not on the Roam scholars plan, I was the only one who needed to have a paid Roam account; the students could join my graph for free. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">As a professor at a small liberal arts college, most of my research gets done with a fresh group of 2-4 undergraduate students over the course of 10 weeks each summer. These students have to quickly ramp up on part of my research and make a contribution all before August vacation. This summer I wanted to develop a workflow that would enable students to get onboarded as quickly as possible, get help when they needed it (while leaving me some time to get my own stuff done), and also document their work for me and the next round of students that join in the future. I decided to conduct an experiment where my students and I used a combination of the instant messaging service Slack and the collaborative notetaking web app Roam Research to conduct our research. I found the combination of real time messaging in Slack with the capability to record meeting notes and workflows in Roam to be a great combination that was easy for students to use and helpful for their planning and reflection if set up appropriately.</summary></entry><entry><title type="html">New Digital Garden</title><link href="http://localhost:4000/2021/03/13/digital-garden.html" rel="alternate" type="text/html" title="New Digital Garden" /><published>2021-03-13T00:00:00-05:00</published><updated>2021-03-13T00:00:00-05:00</updated><id>http://localhost:4000/2021/03/13/digital-garden</id><content type="html" xml:base="http://localhost:4000/2021/03/13/digital-garden.html">&lt;p&gt;I’ve always wanted to keep an active blog, but despite having this aspiration for many years and revisiting it over and over, I’ve realized that my ideal way of sharing information might take a different form. For the next few weeks I am experimenting with a &lt;a href=&quot;/garden&quot;&gt;digital garden&lt;/a&gt;, focusing on curating pages and resources rather than writing discretized updates. Follow along there if you’d like to see what I’m up to. It took a little while longer to setup than I would have liked, so I’m sharing how I set it up to save others a headache.&lt;/p&gt;
 
 &lt;h2 id=&quot;setting-up-the-digital-garden&quot;&gt;Setting up the digital garden&lt;/h2&gt;
 
@@ -445,20 +550,4 @@ permalink: /blog/
 
 &lt;p&gt;I try to charge my laptop up for the day, and then use it on battery power throughout the day. I try to plan out any writing or work I have to do on a piece of paper before I start so I’m focused on the task at hand when I open my laptop up. If I run through the battery in a day, it’s a sign that I should consider taking the rest of the day easy to give myself a rest.&lt;/p&gt;
 
-&lt;p&gt;If anyone has other thoughts on more efficient/mindful computer use, I’d love to hear more.&lt;/p&gt;</content><author><name></name></author><category term="concussion" /><category term="quantified self" /><summary type="html">I’ve been recovering from Post-Concussion Syndrome for the past 7 weeks or so. Now that I’ve been getting back to work, I wanted to share a few things that I’ve found particularly helpful for keeping up with my work without hurting my brain.</summary></entry><entry><title type="html">My Email Vacation</title><link href="http://localhost:4000/2014/07/23/my-email-vacation.html" rel="alternate" type="text/html" title="My Email Vacation" /><published>2014-07-23T01:37:21-04:00</published><updated>2014-07-23T01:37:21-04:00</updated><id>http://localhost:4000/2014/07/23/my-email-vacation</id><content type="html" xml:base="http://localhost:4000/2014/07/23/my-email-vacation.html">&lt;p&gt;I spent the last 10 days or so on vacation. Before I left, I wrote &lt;a href=&quot;http://maggiedelano.tumblr.com/2020/07/11/2014-07-10-a-real-vacation.html&quot;&gt;this&lt;/a&gt; post about trying to make my vacation as relaxing as possible, which for me involved banning myself from all but the most important e-mails.&lt;/p&gt;
-
-&lt;p&gt;To recap briefly, I told everyone who might need something from me before vacation that I’d be gone, and did my best to tie up loose ends before hand. Then, I made all email skip my inbox, except emails that were sent directly to maggie.delano+vacation@gmail.com. I updated my autoresponder to inform people that I would not receive their email until my return unless they sent it to the above address. I deleted the gmail app from my phone, left my laptop at home, and went on vacation. Here’s how it went:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Email checking frequency:&lt;/strong&gt; I found it incredibly tempting to check my email for the first 12 hours or so, but once I got to Portland, I only checked my email once or twice a day for relevant logistics emails from friends. When I arrived in SF, I had to reply to one work related email, but then everything else was logistics emails from friends. I found myself checking my email a bit more frequently when I knew a thread was actively going on, but nudged myself to stop checking so regularly once I picked up on the fact that I was doing this. In Vegas, I didn’t check email too much, and when I realized that there were no more logistics to coordinate (and hence no more relevant emails to look out for), I stopped all together.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Emails received: &lt;/strong&gt; Everyone who needed to get in touch with me complied with my +vacation request. There wasn’t a single email that I received when I got back that I needed to have responded to earlier, and only one important work thread that required the +vacation label at all. All other +vacation emails were trip logistics or from people I had “whitelisted.”&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Phone usage&lt;/strong&gt; : I found that once I had freed myself from my email, I used my phone a lot less. I realized that checking email/twitter are like tics for me, and are something I do immediately if I get a bit bored or stressed. Disconnecting made me feel a lot more present. I expected that I might just spend a lot of time on twitter or facebook, but I actually didn’t go on twitter until half way through my trip, when I started to have more downtime and wanted to have things to talk about with people who weren’t living in my vacation bubble. I checked facebook once during the week to approve friend requests, and then checked it a bunch in Vegas because people were posting photos of me. &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Cheating&lt;/strong&gt; : All emails were labelled “ruinyourvacation.” I didn’t check that label until I got home, which I’m pretty happy about. I did, however, check my sent messages twice to make sure my emails were sent over the gmail web interface, and saw the contents of a few of my “sent” autoresponder messages. These didn’t really give me a sense of the email contents, though.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Coming back&lt;/strong&gt; : I had about 500 email threads to sort through after I got back. I deleted all mailing list spam first (and unsubscribed from things while I was at it). This brought me down to about 300 threads. Then I went through the emails that were left, archived the ones I didn’t need to reply to, and created filters for those types of emails to skip my inbox in the future. Finally, I went through and replied to emails that I needed to. This only added up to about 15 emails.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Overall&lt;/strong&gt; : My vacation was incredibly relaxing, and I’m really glad I made the decision to spare myself the contents of my inbox. Having a break from keeping track of so many things at once was really, really nice. It felt amazing to go about my day relatively worry-free. I joked that the only downside of my “urgent only” email policy was that it didn’t also apply to my text messages. There were a few times when people texted me about things that weren’t urgent and stressed me out a bit, which is one potential downside of taking a vacation “on the grid,” rather than off it.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Moving forward: &lt;/strong&gt; I’m definitely going to implement an email vacation again. I’m also considering implementing mini-vacations over the weekends. I’ve been thinking about the mobile vs. PC use cases for checking email, and am experimenting with enabling push notifications for “important” emails on my phone so that I’m notified when an email I’m waiting for comes in, rather than refreshing my inbox constantly. I’d also like a more permanent solution like my +vacation filter so that I can toggle on which types of email I receive over weekends or breaks (my work and personal email separation is pretty poor as I used my @mit.edu address as my main address for many years before getting a gmail.com address). Will report back on how that all goes.&lt;/p&gt;</content><author><name></name></author><category term="email" /><category term="vacation" /><category term="emailvacation" /><category term="habits" /><category term="quantified self" /><summary type="html">I spent the last 10 days or so on vacation. Before I left, I wrote this post about trying to make my vacation as relaxing as possible, which for me involved banning myself from all but the most important e-mails.</summary></entry></feed>
+&lt;p&gt;If anyone has other thoughts on more efficient/mindful computer use, I’d love to hear more.&lt;/p&gt;</content><author><name></name></author><category term="concussion" /><category term="quantified self" /><summary type="html">I’ve been recovering from Post-Concussion Syndrome for the past 7 weeks or so. Now that I’ve been getting back to work, I wanted to share a few things that I’ve found particularly helpful for keeping up with my work without hurting my brain.</summary></entry></feed>
