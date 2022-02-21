@@ -3,12 +3,12 @@ layout: post
 title: My first podcast appearance!
 date: '2015-10-30T15:26:18-04:00'
 tags:
-- quantified self
-- periods
-- period tracking
-- podcasts
-- phd
-- habits
+  - quantified self
+  - periods
+  - period tracking
+  - podcast
+  - phd
+  - habits
 tumblr_url: https://maggiedelano.tumblr.com/post/132225193479/my-first-podcast-appearance
 ---
 [My first podcast appearance!](http://justtalkingpodcast.com/2015/08/11/with-maggie-delano/)  

@@ -3,7 +3,7 @@ layout: post
 title: Transformative Books (Non-fiction edition)
 date: '2014-03-09T19:12:03-04:00'
 tags:
-- books
+  - books
 tumblr_url: https://maggiedelano.tumblr.com/post/79105895109/transformative-books-non-fiction-edition
 ---
 While discussing book reading habits with a few people recently, I came to the realization that I tend to read a lot of non-fiction, and that non-fiction has shaped how I live my life and view the world. I wanted to share some books that I’ve read (skewed in favor of the past few years, when I started keeping better track of what I’ve read) that I have found particularly meaningful for me.

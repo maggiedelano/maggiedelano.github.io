@@ -3,8 +3,8 @@ layout: post
 title: Readings for the queer soul
 date: '2014-04-27T22:32:00-04:00'
 tags:
-- queer theory
-- books
+  - queer theory
+  - books
 tumblr_url: https://maggiedelano.tumblr.com/post/84087385647/readings-for-the-queer-soul
 ---
 I have been enrolled in [WGS.700](https://stellar.mit.edu/S/course/WGS/sp14/WGS.700/index.html), a course on queer theory and politics. As a queer person, I took the course because I was interested in learning more about the fundamental works that structure queer activism today, and to become equipped with theoretical knowledge of what shapes the way I interact with the world.
