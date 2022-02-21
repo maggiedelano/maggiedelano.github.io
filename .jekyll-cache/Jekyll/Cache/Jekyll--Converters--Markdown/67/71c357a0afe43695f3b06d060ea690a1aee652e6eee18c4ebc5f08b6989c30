@@ -1,10 +1,10 @@
-I"rp<html><h2 class="post-list-heading">Posts</h2>
+I"�n<html><h2 class="post-list-heading">Posts</h2>
     <ul class="post-list"><li><span class="post-meta">Feb 21, 2022</span>
         <h3>
           <a class="post-link" href="/2022/02/21/apple-airtags-active-scanning.html">
             Enough with the beeping: Apple needs to enable active Bluetooth scanning on iOS to prevent stalking using Apple AirTags
           </a>
-        </h3><p><a href="https://www.apple.com/airtag/">Apple AirTags</a> are small Bluetooth Low Energy tracking devices that can fit in a pocket or wallet. While AirTags are intended to be used to find misplaced and lost items, they also provide a cheap and incredibly effective way to track someone without their consent. AirTags use Apple’s <a href="https://www.howtogeek.com/725842/what-is-apples-find-my-network/">Find My Network</a>, enabled by default on Apple products like iPhones, iPads, and Mac computers, to update the network as to the device’s current location. However, unlike previous devices such as <a href="https://www.thetileapp.com/en-us/">Tile</a>, which had sporadic coverage even in urban areas, the widespread coverage of the Find My Network (i.e. any Apple device that has not actively opted out), means that these devices are perfect tools for <a href="https://www.nytimes.com/2022/02/11/technology/airtags-gps-surveillance.html">stalking</a>.</p>
+        </h3><p><em>Update 2022-02-21: After posting about this on <a href="https://twitter.com/maggied/status/1495863458654568454">twitter</a>, Glenn Fleishman <a href="https://twitter.com/maggied/status/1495885817671294978">pointed out</a> that Apple has implemented this feature in a iOS 15.2 Beta, but it has not made it to production. This feature would enable active tracking on iOS using built-in features, but still prevent third parties from implementing similar services on iOS.</em></p>
 </li><li><span class="post-meta">Sep 9, 2021</span>
         <h3>
           <a class="post-link" href="/2021/09/09/PARA-BASB.html">

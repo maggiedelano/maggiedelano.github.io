@@ -1,4 +1,6 @@
-I"6<p><a href="https://www.apple.com/airtag/">Apple AirTags</a> are small Bluetooth Low Energy tracking devices that can fit in a pocket or wallet. While AirTags are intended to be used to find misplaced and lost items, they also provide a cheap and incredibly effective way to track someone without their consent. AirTags use Apple’s <a href="https://www.howtogeek.com/725842/what-is-apples-find-my-network/">Find My Network</a>, enabled by default on Apple products like iPhones, iPads, and Mac computers, to update the network as to the device’s current location. However, unlike previous devices such as <a href="https://www.thetileapp.com/en-us/">Tile</a>, which had sporadic coverage even in urban areas, the widespread coverage of the Find My Network (i.e. any Apple device that has not actively opted out), means that these devices are perfect tools for <a href="https://www.nytimes.com/2022/02/11/technology/airtags-gps-surveillance.html">stalking</a>.</p>
+I"l8<p><em>Update 2022-02-21: After posting about this on <a href="https://twitter.com/maggied/status/1495863458654568454">twitter</a>, Glenn Fleishman <a href="https://twitter.com/maggied/status/1495885817671294978">pointed out</a> that Apple has implemented this feature in a iOS 15.2 Beta, but it has not made it to production. This feature would enable active tracking on iOS using built-in features, but still prevent third parties from implementing similar services on iOS.</em></p>
+
+<p><a href="https://www.apple.com/airtag/">Apple AirTags</a> are small Bluetooth Low Energy tracking devices that can fit in a pocket or wallet. While AirTags are intended to be used to find misplaced and lost items, they also provide a cheap and incredibly effective way to track someone without their consent. AirTags use Apple’s <a href="https://www.howtogeek.com/725842/what-is-apples-find-my-network/">Find My Network</a>, enabled by default on Apple products like iPhones, iPads, and Mac computers, to update the network as to the device’s current location. However, unlike previous devices such as <a href="https://www.thetileapp.com/en-us/">Tile</a>, which had sporadic coverage even in urban areas, the widespread coverage of the Find My Network (i.e. any Apple device that has not actively opted out), means that these devices are perfect tools for <a href="https://www.nytimes.com/2022/02/11/technology/airtags-gps-surveillance.html">stalking</a>.</p>
 
 <p>While Apple included some protections <a href="https://www.apple.com/newsroom/2021/04/apple-introduces-airtag/">at launch</a>, these safety features could take days to trigger, and left Android users especially vulnerable as they were not able to receive notifications of AirTags traveling with them. Apple has since updated AirTag safety features, including <a href="https://www.cnet.com/news/apple-updating-airtags-with-new-privacy-warnings-better-warning-sounds-smarter-find-my-tracking/">shortening</a> the length of time before an AirTag will make a sound, and releasing an active scanning app for Android called <a href="https://play.google.com/store/apps/details?id=com.apple.trackerdetect">Tracker Detect</a>. They have also <a href="https://www.apple.com/newsroom/2022/02/an-update-on-airtag-and-unwanted-tracking/">pledged</a> a variety of improvements such as coupling an alert on iOS with a sound, and refining the unwanted tracker logic.</p>
 
@@ -88,7 +90,16 @@ Tx Power:       10
 
 <p>I’ve also written a <a href="/Bluetooth_Scanner_HowTo_v1.pdf">guide</a> that you can use to scan your local environment for AirTags on iOS or Android.</p>
 
-<p># Acknow</p>
+<h1 id="acknowledgements">Acknowledgements</h1>
 
 <p>Thank you to Toby Shulruff and Kendra Albert for their help with the research and writing for this article.</p>
+
+<style>
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+</style>
+
 :ET
