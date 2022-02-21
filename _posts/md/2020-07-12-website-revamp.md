@@ -149,3 +149,10 @@ And then I was done (zzz).
 
 # Footnotes
 
+<style>
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+</style>

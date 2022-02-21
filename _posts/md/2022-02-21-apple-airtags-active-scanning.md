@@ -97,8 +97,10 @@ If you are concerned about being stalked, you can contact the National Domestic 
 
  I’ve also written a [guide](/Bluetooth_Scanner_HowTo_v1.pdf) that you can use to scan your local environment for AirTags on iOS or Android.
 
- # Acknowledgements
+# Acknowledgements
+ 
  Thank you to Toby Shulruff and Kendra Albert for their help with the research and writing for this article. 
+
 
 <style>
 .center-image
