@@ -11,6 +11,10 @@ Please see my <a href="../cv_mkd.pdf" target="_blank">CV</a> for additional info
 
 \* = contributed equally
 
+* Kendra Albert\*, **Maggie Delano**\*, Sex Trouble: Sex/Gender Slippage, Sex Confusion, and Sex Obsession in Machine Learning Using Electronic Health Records. _Patterns_, In Press. [arXiv](https://arxiv.org/abs/2203.08227)
+* **Maggie Delano**, Vidya Ganapati, Rezhwan Kamal, Bryan Le, Jackie Le, Rey Mendoza, Evaluating Research Grade Bioimpedance Hardware Using Textile Electrodes for Long-Term Fluid Status Monitoring. _Frontiers In Electronics_, January, 2022. [doi](https://doi.org/10.3389/felec.2021.762442)
+* Kendra Albert\*, **Maggie Delano**\*, Bogdan Kulynych\*, Ram Kumar\*, Adversarial for Good? How the Adversarial ML Community's Values Impede Socially Beneficial uses of Attacks, in _ICML 2021 Workshop on Adversarial Machine Learning_, June 2021. [arXiv](https://arxiv.org/abs/2107.10302)
+* **Maggie Delano**,Teaching Inclusive Engineering Design at a Small Liberal Arts College, in _Co-Designing Resources for Ethics Education in HCI Workshop at CHI 2021_, May 2021. [arXiv](https://arxiv.org/abs/2105.08201)
 * Kendra Albert\*, **Maggie Delano**\*, "This Whole Thing Smacks of Gender": Algorithmic Exclusion in Bioimpedance-based Body Composition Analysis. _ACM Conference on Fairness, Accountability, and Transparency (ACM FAccT)_, March 2021. [arXiv](https://arxiv.org/abs/2101.08325)
 * Kendra Albert\*, **Maggie Delano**\*, Jon Penney\*, Afsaneh Rigot\*, Ram Shankar Siva Kumar\*, Ethical Testing in the Real World: Evaluating Physical Testing of Adversarial Machine Learning. _Neural Information Processing Systems Conference, Workshop on Dataset Curation and Security and Workshop on Navigating the Broader Impacts of AI Research_, December 2020. [arXiv](https://arxiv.org/abs/2012.02048)
 * **Maggie Delano**, Band Electrodes Reduce Simulated Calf Bioimpedance Measurement Errors Due to Muscle Anisotropy. _Annual International Conference of the IEEE Engineering in Medicine and Biology Society_, 2020:3981-3984. [doi](https://doi.org/10.1109/EMBC44109.2020.9175272)
