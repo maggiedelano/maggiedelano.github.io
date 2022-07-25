@@ -26,7 +26,7 @@ baseurl:
 title: Maggie Delano
 email: mdelano1@swarthmore.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Maggie Delano is an Assistant Professor at Swarthmore College working on medical devices for patients with chronic diseases. She's also interested in inclusive engineering design.
+  Maggie Delano is an Assistant Professor at Swarthmore College working on medical devices for patients with chronic diseases. They are also interested in inclusive engineering design.
 #baseurl: "" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: maggied
