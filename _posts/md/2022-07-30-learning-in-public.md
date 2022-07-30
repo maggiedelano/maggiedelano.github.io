@@ -91,6 +91,6 @@ If this struck a chord with you and you want to consider how you can engage and 
 If you value learning in community, search for the [campfires](https://tomcritchlow.com/2018/10/10/of-gardens-and-wikis/), not the soap boxes.
 
 ## Acknowledgements
-Thank you to the amazing folks on the Obsidian Discord for sharing some of the links included in this post, and for helping me understand why a lot of this advice resonates so well with aspiring creatives. I'll update this post with individual attributions if I have consent to do so. And thank you to Kendra Albert for providing feedback on multiple drafts of this post.
+Thank you to the amazing folks on the Obsidian Discord for sharing some of the links included in this post. Bob Doto provided insights on how posting content is not neutral, [Chase Littlepaws](https://github.com/ChaseLittlepaws) shared several links related to creativity and learning in public, and ladle shared a link about campfires and made points about when learning in public is appropriate and when it isn't. And thank you to Kendra Albert for providing feedback on multiple drafts of this post.
 
 ## Footnotes
