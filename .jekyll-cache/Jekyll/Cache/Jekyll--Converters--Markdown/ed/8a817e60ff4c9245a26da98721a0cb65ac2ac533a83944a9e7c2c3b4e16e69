@@ -1,0 +1,266 @@
+I"0p<html><h2 class="post-list-heading">Posts</h2>
+    <ul class="post-list"><li><span class="post-meta">Jul 30, 2022</span>
+        <h3>
+          <a class="post-link" href="/2022/07/30/learning-in-public.html">
+            Enough with the beeping: Apple needs to enable active Bluetooth scanning on iOS to prevent stalking using Apple AirTags
+          </a>
+        </h3><h1 id="why-i-hate-whats-become-of-learning-in-public">Why I Hate What’s Become Of “Learning In Public”</h1>
+</li><li><span class="post-meta">Feb 21, 2022</span>
+        <h3>
+          <a class="post-link" href="/2022/02/21/apple-airtags-active-scanning.html">
+            Enough with the beeping: Apple needs to enable active Bluetooth scanning on iOS to prevent stalking using Apple AirTags
+          </a>
+        </h3><p><em>Update 2022-02-21: After posting about this on <a href="https://twitter.com/maggied/status/1495863458654568454">twitter</a>, Glenn Fleishman <a href="https://twitter.com/maggied/status/1495885817671294978">pointed out</a> that Apple has implemented this feature in a iOS 15.2 Beta, but it has not made it to production. This feature would enable active tracking on iOS using built-in features, but still prevent third parties from implementing similar services on iOS.</em></p>
+</li><li><span class="post-meta">Sep 9, 2021</span>
+        <h3>
+          <a class="post-link" href="/2021/09/09/PARA-BASB.html">
+            Managing Professor Life with PARA, OmniFocus, and Roam
+          </a>
+        </h3><p><em>This is a post I wrote on the <a href="https://www.buildingasecondbrain.com/">Building a Second Brain</a> course forum in September 2020 about my experience trying out the <a href="https://fortelabs.co/blog/para/">PARA</a> project management system for the first time. I’m sharing it here in case it is helpful for anyone thinking about PARA or project management more generally.</em></p>
+</li><li><span class="post-meta">Aug 9, 2021</span>
+        <h3>
+          <a class="post-link" href="/2021/08/09/summer-research-in-roam.html">
+            Summer Research Collaboration in Roam Research
+          </a>
+        </h3><p>As a professor at a small liberal arts college, most of my research gets done with a fresh group of 2-4 undergraduate students over the course of 10 weeks each summer. These students have to quickly ramp up on part of my research and make a contribution all before August vacation. This summer I wanted to develop a workflow that would enable students to get onboarded as quickly as possible, get help when they needed it (while leaving me some time to get my own stuff done), and also document their work for me and the next round of students that join in the future. I decided to conduct an experiment where my students and I used a combination of the instant messaging service <a href="https://slack.com/">Slack</a> and the collaborative notetaking web app <a href="https://roamresearch.com/">Roam Research</a> to conduct our research. I found the combination of real time messaging in Slack with the capability to record meeting notes and workflows in Roam to be a great combination that was easy for students to use and helpful for their planning and reflection if set up appropriately.</p>
+</li><li><span class="post-meta">Mar 13, 2021</span>
+        <h3>
+          <a class="post-link" href="/2021/03/13/digital-garden.html">
+            New Digital Garden
+          </a>
+        </h3><p>I’ve always wanted to keep an active blog, but despite having this aspiration for many years and revisiting it over and over, I’ve realized that my ideal way of sharing information might take a different form. For the next few weeks I am experimenting with a <a href="/garden">digital garden</a>, focusing on curating pages and resources rather than writing discretized updates. Follow along there if you’d like to see what I’m up to. It took a little while longer to setup than I would have liked, so I’m sharing how I set it up to save others a headache.</p>
+</li><li><span class="post-meta">Sep 5, 2020</span>
+        <h3>
+          <a class="post-link" href="/2020/09/05/roamcsssnippets.html">
+            Make Your Roam Theme Your Own With These CSS Snippets
+          </a>
+        </h3><p>There are a lot of amazing themes for <a href="https://roamresearch.com/">Roam Research</a>, many of which come with custom CSS enhancements in addition to changing the default colors. But to fully customize your experience you sometimes want to add custom CSS to an existing theme (or your own theme). Here’s a collection of CSS snippets that can help make your Roam CSS theme really feel like your own.</p>
+</li><li><span class="post-meta">Jul 12, 2020</span>
+        <h3>
+          <a class="post-link" href="/2020/07/12/website-revamp.html">
+            Website Revamp!
+          </a>
+        </h3><p>Greetings from my new website! I had a little time this weekend, and to distract myself from the hellhole that is 2020, I decided to port my previous site (which was mostly handwritten in HTML with a header and some organization using <a href="https://getbootstrap.com/" title="bootstrap">bootstrap</a> and hosted on Swarthmore’s servers) to <a href="https://jekyllrb.com/" title="Jekyll">Jekyll</a>, with hosting on <a href="https://pages.github.com/" title="GitHub Pages">GitHub Pages</a>. I wanted to be able to combine my website and former tumblr blog into one, and Jekyll seemed like an easy way to do that. I considered porting to <a href="https://www.gatsbyjs.org/" title="Gatsby">Gatsby</a>, but I know nothing about <a href="https://reactjs.org/" title="React">React</a> or <a href="https://graphql.org/" title="GraphQL">GraphQL</a> and learning seemed like much more than a weekend project. As it was, I had “fun” trying to figure out how to vertically align my photo and my contact information on the main page, while also being responsive / looking good on both desktop and mobile, so it seems 12 year old software is advanced enough for my limited web programming skills. But hey, I did finally learn the basics of CSS. Here’s a tour of the changes I made.</p>
+</li><li><span class="post-meta">Jan 8, 2019</span>
+        <h3>
+          <a class="post-link" href="/2019/01/08/transitioning-to-professor-life.html">
+            Transitioning to Professor Life
+          </a>
+        </h3><p>Four and a half years ago I wrote <a href="https://maggiedelano.tumblr.com/2020/07/11/2014-06-10-doing-whats-important.html">this post</a> about my priorities and doing what was important to me at the time as a graduate student in the middle of her PhD. Fast forward to today, and I defended my PhD (over a year ago!) and have started a tenure track assistant professor position at Swarthmore College (hurray!). The last year has been a total whirlwind; I moved in early January 2018, turned in my thesis a few weeks later, and then started teaching about 4 days after that. I’ve been getting used to a new job, a new city, and just closed on a condo in December. It’s like jamming a whole ton of adulting all into one year.</p>
+</li><li><span class="post-meta">Nov 16, 2015</span>
+        <h3>
+          <a class="post-link" href="/2015/11/16/using-inclusive-language-in-research-articles.html">
+            Using Inclusive Language in Research Articles
+          </a>
+        </h3><p><a href="https://medium.com/@maggied/using-inclusive-language-in-research-articles-3790b1def91c">Using Inclusive Language in Research Articles</a></p>
+</li><li><span class="post-meta">Oct 30, 2015</span>
+        <h3>
+          <a class="post-link" href="/2015/10/30/my-first-podcast-appearance.html">
+            My first podcast appearance!
+          </a>
+        </h3><p><a href="http://justtalkingpodcast.com/2015/08/11/with-maggie-delano/">My first podcast appearance!</a></p>
+</li><li><span class="post-meta">Oct 28, 2015</span>
+        <h3>
+          <a class="post-link" href="/2015/10/28/maggie-delano-building-myself-back-up.html">
+            Maggie Delano: Building Myself Back Up
+          </a>
+        </h3><p><a href="http://quantifiedself.com/2015/08/maggie-delano-building-back/">Maggie Delano: Building Myself Back Up</a></p>
+</li><li><span class="post-meta">Mar 22, 2015</span>
+        <h3>
+          <a class="post-link" href="/2015/03/22/i-tried-tracking-my-period-and-it-was-even-worse.html">
+            I tried tracking my period and it was even worse than I could have imagined
+          </a>
+        </h3><p><a href="https://medium.com/@maggied/i-tried-tracking-my-period-and-it-was-even-worse-than-i-could-have-imagined-bb46f869f45">I tried tracking my period and it was even worse than I could have imagined</a></p>
+</li><li><span class="post-meta">Oct 19, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/10/19/browsing-without-hurting-my-brain.html">
+            Browsing without hurting my brain
+          </a>
+        </h3><p>I’ve been recovering from <a href="http://en.wikipedia.org/wiki/Post-concussion_syndrome">Post-Concussion Syndrome</a> for the past 7 weeks or so. Now that I’ve been getting back to work, I wanted to share a few things that I’ve found particularly helpful for keeping up with my work without hurting my brain.</p>
+</li><li><span class="post-meta">Jul 23, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/07/23/my-email-vacation.html">
+            My Email Vacation
+          </a>
+        </h3><p>I spent the last 10 days or so on vacation. Before I left, I wrote <a href="http://maggiedelano.tumblr.com/2020/07/11/2014-07-10-a-real-vacation.html">this</a> post about trying to make my vacation as relaxing as possible, which for me involved banning myself from all but the most important e-mails.</p>
+</li><li><span class="post-meta">Jul 10, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/07/10/a-real-vacation.html">
+            A Real Vacation
+          </a>
+        </h3><p>Grad school has been particularly stressful and hectic the past few months, so I’m super excited to be taking a 10 day vacation starting tomorrow. I’ll be flying to Portland, then to SF, then to Las Vegas, and then back home to Boston!</p>
+</li><li><span class="post-meta">Jul 6, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/07/06/a-code-of-conduct.html">
+            A Code of Conduct
+          </a>
+        </h3><p><a href="http://quantifiedself.com/2014/06/code-conduct/">A Code of Conduct</a></p>
+</li><li><span class="post-meta">Jun 22, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/06/22/vegan-eats.html">
+            Vegan Eats
+          </a>
+        </h3><p>I’ve been eating <a href="http://maggiedelano.tumblr.com/2020/07/11/2014-05-05-reflections-after-a-month-of-veganism-during-the.html-week">vegan during the week</a> for almost three months now. I thought it would be pretty challenging to eat vegan and also purchase most of my meals (I’ve been busy, and haven’t had much time for cooking). Fortunately, though, I’ve found a few different vegan options at restaurants in Cambridge and Somerville that I really like. Here are some of my current favorites:</p>
+</li><li><span class="post-meta">Jun 10, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/06/10/doing-whats-important.html">
+            Doing What&#39;s Important
+          </a>
+        </h3><p>About a year ago, I wrote <a href="http://maggiedelano.tumblr.com/2020/07/11/2013-06-06-knowing-whats-important.html">this post</a> about identifying things that are important to me. Now that a year has passed, I’d like to take the time to reflect both on what I wrote a year ago and how I’ve been doing for the past year.</p>
+</li><li><span class="post-meta">Jun 8, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/06/08/governors-ball-highlight-reel.html">
+            governors ball highlight reel
+          </a>
+        </h3><p><img src="/tumblr_files/tumblr_n6vuy4e84v1rjifwxo1_1280.jpg" alt="" /><br />
+ <img src="/tumblr_files/tumblr_n6vuy4e84v1rjifwxo2_1280.jpg" alt="" /><br />
+ <img src="/tumblr_files/tumblr_n6vuy4e84v1rjifwxo3_1280.jpg" alt="" /><br />
+ <img src="/tumblr_files/tumblr_n6vuy4e84v1rjifwxo4_1280.jpg" alt="" /><br />
+ <img src="/tumblr_files/tumblr_n6vuy4e84v1rjifwxo5_1280.jpg" alt="" /></p>
+
+</li><li><span class="post-meta">May 25, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/05/25/summer-time-means-summer-playlists.html">
+            Summer time means summer playlists
+          </a>
+        </h3><p><a href="http://open.spotify.com/user/maggiedel/playlist/5VH0QP3tOwzt2dFny5mV0u">Summer time means summer playlists</a></p>
+</li><li><span class="post-meta">May 18, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/05/18/quantified-self-politics-link-round-up.html">
+            Quantified Self Politics Link Round Up
+          </a>
+        </h3><p>I decided to use what I learned in my <a href="http://maggiedelano.tumblr.com/2020/07/11/2014-04-27-readings-for-the-queer-soul.html">Queer Theory and Politics</a> class this semester to draft an examination of the politics of self-tracking and Quantified Self (the group). It is still a work in progress (if you want to see it, contact me directly), but in the mean time I wanted to post a few links I found particularly helpful and/or interesting while writing.</p>
+</li><li><span class="post-meta">May 5, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/05/05/reflections-after-a-month-of-veganism-during-the.html">
+            Reflections after a month of veganism during the week
+          </a>
+        </h3><p>Four weeks ago, I decided that I wanted to start eating vegan more regularly. I decided to start eating exclusively vegan during the week, and let myself eat whatever I want on the weekend. The experiment has been going well so far, and I want to take the time to reflect on the past few weeks and walk through my motivations for this mostly-vegan diet.</p>
+</li><li><span class="post-meta">Apr 27, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/04/27/readings-for-the-queer-soul.html">
+            Readings for the queer soul
+          </a>
+        </h3><p>I have been enrolled in <a href="https://stellar.mit.edu/S/course/WGS/sp14/WGS.700/index.html">WGS.700</a>, a course on queer theory and politics. As a queer person, I took the course because I was interested in learning more about the fundamental works that structure queer activism today, and to become equipped with theoretical knowledge of what shapes the way I interact with the world.</p>
+</li><li><span class="post-meta">Apr 20, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/04/20/between-my-preceptorship-and-writing-a-final.html">
+            between my preceptorship and writing a final
+          </a>
+        </h3><p><img src="/tumblr_files/tumblr_n4cojvOnDg1rjifwxo1_1280.jpg" alt="" /><br />
+ <img src="/tumblr_files/tumblr_n4cojvOnDg1rjifwxo2_1280.jpg" alt="" /><br />
+ <img src="/tumblr_files/tumblr_n4cojvOnDg1rjifwxo3_1280.jpg" alt="" /><br />
+ <img src="/tumblr_files/tumblr_n4cojvOnDg1rjifwxo4_1280.jpg" alt="" /></p>
+
+</li><li><span class="post-meta">Apr 13, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/04/13/cardiac-stress-testing.html">
+            Cardiac Stress Testing
+          </a>
+        </h3><p>I have been enrolled in the <a href="https://hst.mit.edu/academics/gems">Graduate Education in Medical Sciences</a>program for the past year. This Spring, I am doing a <a href="https://hst.mit.edu/academics/course/hst-240-translational-medicine-preceptorship">Translational Medicine Preceptorship</a> with <a href="http://connects.catalyst.harvard.edu/Profiles/display/Person/61067">Dr. Maulik Majmudar</a>. I just finished my first week, and it has already been an amazing experience. I spent two days this week watching <a href="http://www.mayoclinic.org/tests-procedures/nuclear-stress-test/basics/definition/prc-20012978">Nuclear Imaging Stress Tests</a> and then two more days in the <a href="http://www.nhlbi.nih.gov/health/health-topics/topics/cath/">Cardiac Catheterization Lab</a>, both at MGH. I’ve learned a ton already, and wanted to write up a few interesting things I learned about stress testing.</p>
+</li><li><span class="post-meta">Apr 6, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/04/06/boston-qs-code-of-conduct-writing-process.html">
+            Boston QS Code of Conduct Writing Process
+          </a>
+        </h3><p>As I mentioned in <a href="http://maggiedelano.tumblr.com/2020/07/11/2014-03-23-boston-qs-update.html">this</a> post, I have been working on putting together a Code of Conduct for <a href="http://www.meetup.com/BostonQS/">Boston QS</a>’s meetups. We announced our <a href="http://www.meetup.com/BostonQS/pages/Code_of_Conduct/">Code Of Conduct</a> Thursday just in time for one of our events. I’ve included the full text of the announcement below. </p>
+</li><li><span class="post-meta">Mar 30, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/03/30/in-honor-of-hayao-miyazakis-swan-song.html">
+            In Honor of Hayao Miyazaki&#39;s Swan Song
+          </a>
+        </h3><p>Last weekend I went to see <a href="http://en.wikipedia.org/wiki/The_Wind_Rises">The Wind Rises</a>. I really enjoyed the film (the animation was absolutely gorgeous), but it certainly wasn’t without its <a href="http://www.dispatch.com/content/stories/life_and_entertainment/2014/02/28/artistically-soaring.html">issues</a>. Hayao Miyazaki said this will be his last film, so to commemorate that, here’s a few of my favorite Miyazaki films. If you’d like to get into Miyazaki and are overwhelmed by the options, check out these films:</p>
+</li><li><span class="post-meta">Mar 23, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/03/23/boston-qs-update.html">
+            Boston QS Update
+          </a>
+        </h3><p>In the past few months, I’ve become more involved with the local <a href="http://quantifiedself.com/">Quantified Self</a> community here in Boston. We have been running regular <a href="http://www.meetup.com/BostonQS/events/170552132/">show &amp; tell</a> events, and are getting ready to try our first <a href="http://www.meetup.com/BostonQS/events/170093192/">QS co-lab</a>, an opportunity for QSers in the area to gather and work on projects that interest them. I’m putting together a code of conduct for the meetups that I hope can be applied for the co-labs and also all future events we host. </p>
+</li><li><span class="post-meta">Mar 16, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/03/16/the-city-of-cambridge-also-thinks-you-should-bike.html">
+            The City of Cambridge also thinks you should bike commute in winter!
+          </a>
+        </h3><p>I was walking through Inman Square today and noticed that the City of Cambridge had an advertisement with a link to their <a href="http://www.cambridgema.gov/CDD/Transportation/gettingaroundcambridge/bybike/winterbiking.aspx">guide</a> to winter biking. It covers a lot of the same material as I covered <a href="http://maggiedelano.tumblr.com/2020/07/11/2014-02-17-winter-biking.html">before</a>. The site also links to this great <a href="http://www.abctma.com/sites/default/files/Winter-Bike-Riding-Guide.pdf">PDF</a> with a more in depth guide as to gear to buy.</p>
+</li><li><span class="post-meta">Mar 9, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/03/09/transformative-books-non-fiction-edition.html">
+            Transformative Books (Non-fiction edition)
+          </a>
+        </h3><p>While discussing book reading habits with a few people recently, I came to the realization that I tend to read a lot of non-fiction, and that non-fiction has shaped how I live my life and view the world. I wanted to share some books that I’ve read (skewed in favor of the past few years, when I started keeping better track of what I’ve read) that I have found particularly meaningful for me.</p>
+</li><li><span class="post-meta">Feb 24, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/02/24/exercise-tracking-for-busy-people.html">
+            Exercise tracking for busy people
+          </a>
+        </h3><p>As mentioned in <a href="http://maggiedelano.tumblr.com/2020/07/11/2014-02-24-rescue-time-and-the-pomodoro-technique.html">this</a> post, I was busy this past week and did not get to spend dedicated time exercising for the MIT <a href="http://getfit.mit.edu">Get Fit</a> competition. I did bike or walk to campus every day, though, and decided to go back and log those minutes from the week. It was hard to remember which days I biked and where I had been (even with reviewing my calendar), but then I remembered I have the <a href="http://www.moves-app.com/">Moves app</a> on my phone. Moves on the iPhone 5S logs walking, running, biking and location data that give you an interesting snapshot of your day. I was able to just go back and review how long I cycled / walked each day (I’m willing to count walking I do by myself because I walk pretty briskly), and log all of my minutes for the week in about 5 minutes total.</p>
+</li><li><span class="post-meta">Feb 24, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/02/24/rescue-time-and-the-pomodoro-technique.html">
+            Rescue Time and the Pomodoro Technique
+          </a>
+        </h3><p>I have tracked my computer usage with <a href="http://rescuetime.com">Rescue Time</a> for several years now, but don’t always pay a ton of attention to it. This past week I decided to drop as many of my obligations as I could to focus on pumping a next generation board out for my thesis. I use the <a href="http://pomodorotechnique.com/">Pomodoro technique</a>, relying on the <a href="https://chrome.google.com/webstore/detail/strict-workflow/cgmnfnmlficgeijcalkgnnkigkefkbhd/reviews?hl=en">Strict Workflow</a> chrome extension to keep me honest about minimizing distractions. I set the extension up to block stereotypically distracting sites (Facebook, Twitter, etc.) but also my email and calendar so I really have no choice but to do work for the pomodoro duration (25 minutes). I then take a 5 minute break. After four pomodoros, I allow myself a 15 minute break.</p>
+</li><li><span class="post-meta">Feb 17, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/02/17/winter-biking.html">
+            Winter Biking
+          </a>
+        </h3><p>I moved near Inman Square this past June, which is a great location about 1.3 miles from my lab. I promised myself that in exchange for moving closer to campus, I would start biking everywhere. I started bike commuting over the summer, and found that I love it because it’s pretty much the fastest way for me to get around without a car. </p>
+</li><li><span class="post-meta">Feb 9, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/02/09/the-little-things-you-needed-to-know-about-altium.html">
+            The little things you needed to know about Altium
+          </a>
+        </h3><p>I decided to switch from <a href="http://www.cadsoftusa.com/">Eagle</a> to <a href="http://www.altium.com/">Altium</a> for the next PCB I am designing for my PhD. While Altium is definitely a more professional tool, I found the startup time for my first design to be a bit longer than I would have liked. Below is a list of a few little things that seem simple in theory, but were non-intuitive for me to figure out the first time around (even with the help of google and the tutorial pdfs and videos).</p>
+</li><li><span class="post-meta">Feb 2, 2014</span>
+        <h3>
+          <a class="post-link" href="/2014/02/02/my-roommate-has-an-iron-uterus.html">
+            My Roommate Has An Iron Uterus
+          </a>
+        </h3><p>Back in November I wrote up a <a href="http://web.mit.edu/maggied/Public/periodthezine.png">short piece</a> that was featured in <a href="http://blog.ameliagreenhall.com/post/period.-the-zine-released">period. the zine</a> on a period tracking experiment I have been doing. I started tracking my periods after I quit birth control and found that my cycle started syncing up with my roommate’s after we moved in together. In the piece I chart out how the duration of my cycle changes over the months and begins to sync up. I’m still tracking now, but it’s looking like my cycle is increasing in duration again and diverging to the 28 day cycle I was on for a few months. I do think it’s pretty interesting that my period synced up, but only for a short period of time before getting longer again.</p>
+</li><li><span class="post-meta">Oct 22, 2013</span>
+        <h3>
+          <a class="post-link" href="/2013/10/22/wearing-many-hats-at-qs13.html">
+            Wearing many hats at #QS13
+          </a>
+        </h3><p>About a week ago I had the privilege of attending the <a href="http://quantifiedself.com/conference/San-Francisco-2013/">Quantified Self Global Conference</a> in San Francisco. It was an amazing and thought provoking three days. Before I get into the details, I want to thank Gary Wolf, Ernesto Ramirez, Kate Farnady, Marcia Seidler, Steven Jonas, and Amelia Greenhall for organizing the conference, helping me with my presentation, and generally being encouraging and awesome people.</p>
+</li><li><span class="post-meta">Jun 6, 2013</span>
+        <h3>
+          <a class="post-link" href="/2013/06/06/knowing-whats-important.html">
+            Knowing What&#39;s Important
+          </a>
+        </h3><p><em>Note: this blog post was inspired in part by <a href="http://zenhabits.net/simple-day/">this</a> article from Leo Babauta at  <a href="http://zenhabits.net/">Zen Habits</a> and <a href="http://wayoftheduck.com/subjectivity">this</a> article by <a href="http://busterbenson.com/">Buster Benson</a>, two of my favorite sources for this type of thinking.</em></p>
+</li><li><span class="post-meta">Apr 27, 2013</span>
+        <h3>
+          <a class="post-link" href="/2013/04/27/despair-suffering-meaning.html">
+            Despair = Suffering - Meaning
+          </a>
+        </h3><p>The past two weeks have been rough. Explosions at the finish line of the Boston Marathon. An MIT campus police officer shot in cold blood right on the corner of Vassar and Main Streets. A city wide lockdown for an entire day. Not to mention a number of other tragedies outside Boston.</p>
+</li><li><span class="post-meta">Jan 23, 2013</span>
+        <h3>
+          <a class="post-link" href="/2013/01/23/the-answer-is-always-no.html">
+            The answer is always no
+          </a>
+        </h3><p>When I decided to go gluten free, I didn’t think it would be easy. Pasta, beer, bagels. I seriously loved eating wheat. I knew that if I allowed myself to make a choice - to eat gluten or not to eat it - I’d inevitably wind up eating it. Even if I made an a priori decision to limit my intake, each time I was confronted with gluten, I’d have to decide: to eat it or not to.</p>
+</li><li><span class="post-meta">Jan 22, 2013</span>
+        <h3>
+          <a class="post-link" href="/2013/01/22/my-video-on-motivation-for-the-quantified-self-i.html">
+            no title
+          </a>
+        </h3><iframe src="https://player.vimeo.com/video/57823447?title=0&amp;byline=0&amp;portrait=0&amp;app_id=122963" width="400" height="225" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" title="Maggie Delano - Motivation for the Quantified Self - Boston QS"></iframe>
+</li><li><span class="post-meta">Nov 4, 2012</span>
+        <h3>
+          <a class="post-link" href="/2012/11/04/i-want-to-write-more.html">
+            I want to write more
+          </a>
+        </h3><p>A few weeks ago, I stumbled upon <a href="http://jsomers.net/blog/more-people-should-write" title="More people should write">this</a> article about why more people should write. The author discusses how writing makes one more mindful of one’s surroundings, and think critically. The article reminded me that I want to be more mindful of my life and thoughts. I realized I want to write more, not just because “more people should,” but for the following reasons:</p>
+</li><li><span class="post-meta">Oct 26, 2012</span>
+        <h3>
+          <a class="post-link" href="/2012/10/26/hello-world.html">
+            Hello world.
+          </a>
+        </h3><p>Rebooting tumblr and testing out Disqus integration.</p>
+</li></ul>
+  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p><html>
+</html></html>
+:ET
