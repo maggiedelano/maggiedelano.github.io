@@ -12,7 +12,7 @@ Please see my <a href="../cv_mkd.pdf" target="_blank">CV</a> for additional info
 \* = contributed equally
 
 * Santiago F. Scagliusi, Pablo Pérez, Daniel Martín, Gloria Huertas, Alberto Olmo, Alberto Yúfera, and **Maggie Delano**, Enhancing the Precision of AD5940 Segmental Bioimpedance Measurements through Self-Calibration. _IEEE Biosensors Conference_, 2023. Forthcoming
-* Santiago Scalgiusi, **Maggie Delano**, Characterization and Correction of Low Frequency Artifacts in Segmental Bioimpedance Measurements. _Annual International Conference of the IEEE Engineering in Medicine and Biology Society_, 2023. Forthcoming
+* Santiago Scagliusi, **Maggie Delano**, Characterization and Correction of Low Frequency Artifacts in Segmental Bioimpedance Measurements. _Annual International Conference of the IEEE Engineering in Medicine and Biology Society_, 2023. Forthcoming
 * Kendra Albert\*, **Maggie Delano**\*, Algorithmic Exclusion. Forthcoming in Critical AI Handbook. [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4122529)
 * Kendra Albert\*, **Maggie Delano**\*, Two researchers share how their cross disciplinary collaboration enables work to guide the future of data science, _Patterns_, 3(8):100573, August 2022. [doi](https://doi.org/10.1016/j.patter.2022.100573)
 * Kendra Albert\*, **Maggie Delano**\*, Sex Trouble: Sex/Gender Slippage, Sex Confusion, and Sex Obsession in Machine Learning Using Electronic Health Records. _Patterns_, 3(8):100534, August 2022. [doi](https://doi.org/10.1016/j.patter.2022.100534)
