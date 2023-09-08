@@ -19,9 +19,9 @@ layout: home
                 Office: Singer 233 <br>
                 Email: <a href="mailto:mdelano1@swarthmore.edu">mdelano1@swarthmore.edu</a> <br>
                 Phone: 610-328-8295 <br>
-                <!--<br>
-                <a href="https://calendly.com/maggiedelano/meet">Schedule office hours</a>
-                <br>-->
+                <br>
+                <a href="https://calendly.com/maggiedelano/meet">Schedule office hours or appointment</a>
+                <br>
         </div>
     </div>
 </html>
