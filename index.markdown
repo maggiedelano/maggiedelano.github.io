@@ -12,7 +12,7 @@ layout: home
         </div>
         <div id="text">
             <h2>Maggie Delano</h2>
-                Assistant Professor <br>
+                Associate Professor <br>
                 Engineering Department <br>
                 Swarthmore College <br>
                 <br>
