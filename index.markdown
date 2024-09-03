@@ -20,7 +20,7 @@ layout: home
                 Email: <a href="mailto:mdelano1@swarthmore.edu">mdelano1@swarthmore.edu</a> <br>
                 Phone: 610-328-8295 <br>
                 <br>
-                <a href="https://calendly.com/maggiedelano/meet">Schedule office hours or appointment</a>
+		On leave 2024-2025 Academic Year
                 <br>
         </div>
     </div>
