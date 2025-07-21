@@ -12,21 +12,18 @@ layout: home
         </div>
         <div id="text">
             <h2>Maggie Delano</h2>
-                Associate Professor <br>
-                Engineering Department <br>
+                Associate Professor and Chair<br>
+                Department of Engineering <br>
                 Swarthmore College <br>
                 <br>
                 Office: Singer 233 <br>
                 Email: <a href="mailto:mdelano1@swarthmore.edu">mdelano1@swarthmore.edu</a> <br>
                 Phone: 610-328-8295 <br>
-                <br>
-		On leave 2024-2025 Academic Year
-                <br>
         </div>
     </div>
 </html>
 
-I'm an Associate Professor of Engineering at [Swarthmore College](https://www.swarthmore.edu/){:target="_blank"}. My research interests include the development of monitoring systems for chronic diseases and inclusive engineering design. For my [PhD dissertation](https://dspace.mit.edu/handle/1721.1/115636){:target="_blank"}, I built a [fluid status monitor](http://www.analog.com/en/landing-pages/001/medrc.html){:target="_blank"} for patients with congestive heart failure with Professor Charlie Sodini.  While in graduate school, I was also co-organizer of Quantified Self Boston and started the Quantified Self Boston Women's Meetup. You can find a list of my publications [here](/publications) and a list of the courses I've taught [here](/teaching). 
+I'm an Associate Professor and Chair of Engineering at [Swarthmore College](https://www.swarthmore.edu/){:target="_blank"}. My research interests include the development of monitoring systems for chronic diseases and inclusive engineering design. For my [PhD dissertation](https://dspace.mit.edu/handle/1721.1/115636){:target="_blank"}, I built a [fluid status monitor](http://www.analog.com/en/landing-pages/001/medrc.html){:target="_blank"} for patients with congestive heart failure with Professor Charlie Sodini.  While in graduate school, I was also co-organizer of Quantified Self Boston and started the Quantified Self Boston Women's Meetup. You can find a list of my publications [here](/publications) and a list of the courses I've taught [here](/teaching). 
 
 My current projects include:
 - Human subjects studies and simulations to better understand the influence of skin tone and perfusion on pulse oximeter accuracy
