@@ -27,7 +27,6 @@ I'm an Associate Professor and Chair of Engineering at [Swarthmore College](http
 
 My current projects include:
 - Human subjects studies and simulations to better understand the influence of skin tone and perfusion on pulse oximeter accuracy
-- Interdisciplinary collaborations, including one about improving racial bias in pulse oximetry measurements and another about sex/gender in medical machine learning
 - Threat modeling for detecting unwanted location tracking (see [Internet Draft](https://datatracker.ietf.org/doc/draft-ietf-dult-threat-model/){:target="_blank"})
 - A project connecting gender based violence service providers and technology and security professionals to tackle tech abuse (see [Tech Abuse Roster](https://sites.google.com/asu.edu/roster/home){:target="_blank"})
 
